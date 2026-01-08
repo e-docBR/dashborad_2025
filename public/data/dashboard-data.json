@@ -1,0 +1,4862 @@
+{
+  "resumo_geral": {
+    "total_alunos": 254,
+    "total_aprovados": 126,
+    "total_reprovados": 70,
+    "taxa_aprovacao_global": 49.61,
+    "total_masculino": 155,
+    "total_feminino": 99,
+    "medias_gerais_disciplina": {
+      "Português": 53.17,
+      "Arte": 69.03,
+      "Filosofia": 70.35,
+      "Inglês": 53.92,
+      "Matemática": 52.96,
+      "Ciências": 51.53,
+      "Geografia": 58.84,
+      "História": 53.69,
+      "Religião": 64.33
+    },
+    "turmas_matutino": 4,
+    "turmas_vespertino": 3
+  },
+  "estatisticas_por_turma": {
+    "A": {
+      "total_alunos": 36,
+      "aprovados": 23,
+      "reprovados": 7,
+      "apcc": 2,
+      "transferidos": 2,
+      "desistentes": 1,
+      "cancelados": 1,
+      "taxa_aprovacao": 63.89,
+      "medias_disciplina": {
+        "Português": 53.27,
+        "Arte": 76.28,
+        "Filosofia": 69.16,
+        "Inglês": 59.61,
+        "Matemática": 53.35,
+        "Ciências": 49.72,
+        "Geografia": 64.41,
+        "História": 54.93,
+        "Religião": 64.52
+      },
+      "masculino": 22,
+      "feminino": 14,
+      "turma": "6º ANO A",
+      "turno": "MATUTINO"
+    },
+    "B": {
+      "total_alunos": 33,
+      "aprovados": 18,
+      "reprovados": 7,
+      "apcc": 4,
+      "transferidos": 3,
+      "desistentes": 1,
+      "cancelados": 0,
+      "taxa_aprovacao": 54.55,
+      "medias_disciplina": {
+        "Português": 57.63,
+        "Arte": 80.67,
+        "Filosofia": 70.1,
+        "Inglês": 62.25,
+        "Matemática": 56.16,
+        "Ciências": 50.17,
+        "Geografia": 68.83,
+        "História": 59.73,
+        "Religião": 75.07
+      },
+      "masculino": 20,
+      "feminino": 13,
+      "turma": "6º ANO B",
+      "turno": "MATUTINO"
+    },
+    "C": {
+      "total_alunos": 38,
+      "aprovados": 20,
+      "reprovados": 8,
+      "apcc": 4,
+      "transferidos": 4,
+      "desistentes": 0,
+      "cancelados": 2,
+      "taxa_aprovacao": 52.63,
+      "medias_disciplina": {
+        "Português": 53.01,
+        "Arte": 75.72,
+        "Filosofia": 74.53,
+        "Inglês": 54.98,
+        "Matemática": 49.38,
+        "Ciências": 50.48,
+        "Geografia": 58.59,
+        "História": 63.02,
+        "Religião": 68.02
+      },
+      "masculino": 24,
+      "feminino": 14,
+      "turma": "6º ANO C",
+      "turno": "MATUTINO"
+    },
+    "D": {
+      "total_alunos": 37,
+      "aprovados": 19,
+      "reprovados": 13,
+      "apcc": 3,
+      "transferidos": 0,
+      "desistentes": 0,
+      "cancelados": 2,
+      "taxa_aprovacao": 51.35,
+      "medias_disciplina": {
+        "Português": 49.72,
+        "Arte": 73.07,
+        "Filosofia": 66.97,
+        "Inglês": 40.18,
+        "Matemática": 54.05,
+        "Ciências": 45.55,
+        "Geografia": 59.45,
+        "História": 58.32,
+        "Religião": 60.93
+      },
+      "masculino": 26,
+      "feminino": 11,
+      "turma": "6º ANO D",
+      "turno": "MATUTINO"
+    },
+    "E": {
+      "total_alunos": 38,
+      "aprovados": 18,
+      "reprovados": 9,
+      "apcc": 1,
+      "transferidos": 4,
+      "desistentes": 3,
+      "cancelados": 3,
+      "taxa_aprovacao": 47.37,
+      "medias_disciplina": {
+        "Português": 51.09,
+        "Arte": 58.29,
+        "Filosofia": 71.82,
+        "Inglês": 55.06,
+        "Matemática": 48.95,
+        "Ciências": 57.5,
+        "Geografia": 55.52,
+        "História": 45.89,
+        "Religião": 62.38
+      },
+      "masculino": 21,
+      "feminino": 17,
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO"
+    },
+    "F": {
+      "total_alunos": 34,
+      "aprovados": 14,
+      "reprovados": 14,
+      "apcc": 1,
+      "transferidos": 3,
+      "desistentes": 2,
+      "cancelados": 0,
+      "taxa_aprovacao": 41.18,
+      "medias_disciplina": {
+        "Português": 56.99,
+        "Arte": 60.84,
+        "Filosofia": 71.45,
+        "Inglês": 56.28,
+        "Matemática": 57.47,
+        "Ciências": 59.36,
+        "Geografia": 55.58,
+        "História": 48.59,
+        "Religião": 61.45
+      },
+      "masculino": 22,
+      "feminino": 12,
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO"
+    },
+    "G": {
+      "total_alunos": 38,
+      "aprovados": 14,
+      "reprovados": 12,
+      "apcc": 1,
+      "transferidos": 6,
+      "desistentes": 5,
+      "cancelados": 0,
+      "taxa_aprovacao": 36.84,
+      "medias_disciplina": {
+        "Português": 50.96,
+        "Arte": 54.71,
+        "Filosofia": 68.74,
+        "Inglês": 51.09,
+        "Matemática": 51.26,
+        "Ciências": 49.55,
+        "Geografia": 47.96,
+        "História": 42.24,
+        "Religião": 57.7
+      },
+      "masculino": 20,
+      "feminino": 18,
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO"
+    }
+  },
+  "alunos": [
+    {
+      "nome": "ADASSA VITORIA SOARES MARTINS",
+      "data_nascimento": "20/08/2013",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 53.7,
+        "Arte": 83.0,
+        "Filosofia": 72.0,
+        "Inglês": 70.5,
+        "Matemática": 64.4,
+        "Ciências": 63.0,
+        "Geografia": 72.0,
+        "História": 64.4,
+        "Religião": 74.0
+      },
+      "media_geral": 68.56,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ALICE DOS SANTOS PINHEIRO",
+      "data_nascimento": "14/10/2013",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 73.4,
+        "Arte": 88.5,
+        "Filosofia": 72.0,
+        "Inglês": 86.0,
+        "Matemática": 71.5,
+        "Ciências": 50.0,
+        "Geografia": 88.5,
+        "História": 63.4,
+        "Religião": 92.6
+      },
+      "media_geral": 76.21,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANA KELLY GOMES GONSALVES",
+      "data_nascimento": "12/11/2013",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 60.2,
+        "Arte": 89.5,
+        "Filosofia": 78.0,
+        "Inglês": 53.0,
+        "Matemática": 59.0,
+        "Ciências": 54.0,
+        "Geografia": 88.0,
+        "História": 67.9,
+        "Religião": 65.7
+      },
+      "media_geral": 68.37,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANALICY DOS SANTOS TIMBOIBA",
+      "data_nascimento": "28/08/2014",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 79.2,
+        "Arte": 98.0,
+        "Filosofia": 78.0,
+        "Inglês": 85.0,
+        "Matemática": 88.5,
+        "Ciências": 75.5,
+        "Geografia": 95.5,
+        "História": 91.3,
+        "Religião": 89.7
+      },
+      "media_geral": 86.74,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANDRESSA CARDOSO DA SILVA",
+      "data_nascimento": "10/06/2012",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "CANCELADO"
+    },
+    {
+      "nome": "BRENO HENRIQUE DOS SANTOS\nDAMACENA",
+      "data_nascimento": "17/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 52.8,
+        "Arte": 75.0,
+        "Filosofia": 78.0,
+        "Inglês": 64.2,
+        "Matemática": 69.0,
+        "Ciências": 50.0,
+        "Geografia": 76.0,
+        "História": 56.3,
+        "Religião": 82.2
+      },
+      "media_geral": 67.06,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "CARLOS DANIEL PESSOA MESQUITA",
+      "data_nascimento": "10/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "ELIZA COSTA OLIVEIRA",
+      "data_nascimento": "19/09/2013",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 85.0,
+        "Arte": 100.0,
+        "Filosofia": 78.0,
+        "Inglês": 89.5,
+        "Matemática": 85.5,
+        "Ciências": 61.0,
+        "Geografia": 98.0,
+        "História": 68.0,
+        "Religião": 86.8
+      },
+      "media_geral": 83.53,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ELOA CRUZ DOS SANTOS",
+      "data_nascimento": "14/11/2013",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "EMANUEL FRANÇA MENDES",
+      "data_nascimento": "02/12/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 86.7,
+        "Arte": 92.0,
+        "Filosofia": 85.0,
+        "Inglês": 89.3,
+        "Matemática": 81.4,
+        "Ciências": 67.8,
+        "Geografia": 90.5,
+        "História": 78.5,
+        "Religião": 76.0
+      },
+      "media_geral": 83.02,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "EMANUELLE EDUARDA SOUZA RIBEIRO",
+      "data_nascimento": "13/03/2008",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "ENZO GABRIEL PEREIRA RODRIGUES",
+      "data_nascimento": "06/03/2012",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 27.5,
+        "Arte": 50.5,
+        "Filosofia": 71.0,
+        "Inglês": 39.5,
+        "Matemática": 39.0,
+        "Ciências": 46.5,
+        "Geografia": 46.0,
+        "História": 42.8,
+        "Religião": 46.2
+      },
+      "media_geral": 45.44,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ERICK DA SILVA PEREIRA",
+      "data_nascimento": "29/11/2010",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 0.0,
+        "Arte": 50.0,
+        "Filosofia": 0.0,
+        "Inglês": 0.0,
+        "Matemática": 6.0,
+        "Ciências": 5.0,
+        "Geografia": 12.0,
+        "História": 3.2,
+        "Religião": 0.0
+      },
+      "media_geral": 8.47,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "GUILHERME ALVES DOS SANTOS",
+      "data_nascimento": "18/07/2011",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 10.6,
+        "Arte": 50.0,
+        "Filosofia": 71.0,
+        "Inglês": 4.2,
+        "Matemática": 2.5,
+        "Ciências": 21.1,
+        "Geografia": 12.0,
+        "História": 9.0,
+        "Religião": 9.0
+      },
+      "media_geral": 21.04,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "GUILHERME TRINDADE DOS SANTOS",
+      "data_nascimento": "03/02/2011",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 53.8,
+        "Arte": 77.5,
+        "Filosofia": 75.0,
+        "Inglês": 71.5,
+        "Matemática": 52.0,
+        "Ciências": 50.0,
+        "Geografia": 74.0,
+        "História": 55.4,
+        "Religião": 78.1
+      },
+      "media_geral": 65.26,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "HENDRICK RICARDO DE LIRIO CARDOZO",
+      "data_nascimento": "23/03/2014",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.7,
+        "Arte": 98.0,
+        "Filosofia": 73.0,
+        "Inglês": 64.0,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 50.5,
+        "História": 52.2,
+        "Religião": 50.0
+      },
+      "media_geral": 59.93,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "ISABELA BIANCA DE JESUS ALVES",
+      "data_nascimento": "12/06/2012",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 60.8,
+        "Arte": 66.0,
+        "Filosofia": 71.0,
+        "Inglês": 59.5,
+        "Matemática": 55.4,
+        "Ciências": 50.5,
+        "Geografia": 66.5,
+        "História": 54.2,
+        "Religião": 68.2
+      },
+      "media_geral": 61.34,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JOAO ANTONIO ALMEIDA CARRILIO",
+      "data_nascimento": "04/12/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 53.0,
+        "Arte": 52.0,
+        "Filosofia": 75.0,
+        "Inglês": 61.0,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 50.5,
+        "História": 57.1,
+        "Religião": 83.2
+      },
+      "media_geral": 59.09,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JOAO MIGUEL SANTOS AGUILAR",
+      "data_nascimento": "05/12/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 58.1,
+        "Arte": 76.0,
+        "Filosofia": 74.0,
+        "Inglês": 81.3,
+        "Matemática": 57.5,
+        "Ciências": 52.5,
+        "Geografia": 92.5,
+        "História": 66.8,
+        "Religião": 61.9
+      },
+      "media_geral": 68.96,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JOAO OTAVIO DE SOUZA SANTOS",
+      "data_nascimento": "28/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 55.2,
+        "Arte": 74.0,
+        "Filosofia": 77.0,
+        "Inglês": 65.0,
+        "Matemática": 71.0,
+        "Ciências": 52.0,
+        "Geografia": 74.0,
+        "História": 57.3,
+        "Religião": 71.2
+      },
+      "media_geral": 66.3,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KAIO GABRIEL DUTRA BORGES",
+      "data_nascimento": "29/12/2013",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 58.4,
+        "Arte": 72.0,
+        "Filosofia": 51.0,
+        "Inglês": 50.0,
+        "Matemática": 55.0,
+        "Ciências": 54.5,
+        "Geografia": 61.5,
+        "História": 56.6,
+        "Religião": 68.1
+      },
+      "media_geral": 58.57,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KAUA SOARES AMANTI",
+      "data_nascimento": "07/01/2014",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 86.4,
+        "Arte": 98.5,
+        "Filosofia": 81.0,
+        "Inglês": 83.0,
+        "Matemática": 74.0,
+        "Ciências": 69.5,
+        "Geografia": 93.0,
+        "História": 86.0,
+        "Religião": 82.5
+      },
+      "media_geral": 83.77,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KLAYVE SOUZA FERNANDES",
+      "data_nascimento": "12/05/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 3.5,
+        "Arte": 51.0,
+        "Filosofia": 30.0,
+        "Inglês": 6.0,
+        "Matemática": 0.0,
+        "Ciências": 2.0,
+        "Geografia": 1.5,
+        "História": 4.0,
+        "Religião": 8.0
+      },
+      "media_geral": 11.78,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "LYARA ROBERTTA ZAMBE LIRIO",
+      "data_nascimento": "21/01/2014",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 62.7,
+        "Arte": 100.0,
+        "Filosofia": 74.0,
+        "Inglês": 77.5,
+        "Matemática": 53.5,
+        "Ciências": 50.0,
+        "Geografia": 77.0,
+        "História": 74.5,
+        "Religião": 77.7
+      },
+      "media_geral": 71.88,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "MIRELLA DIAS BATISTA DE ALMEIDA",
+      "data_nascimento": "08/03/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 55.2,
+        "Arte": 87.0,
+        "Filosofia": 72.0,
+        "Inglês": 53.5,
+        "Matemática": 50.5,
+        "Ciências": 50.5,
+        "Geografia": 54.5,
+        "História": 56.7,
+        "Religião": 56.0
+      },
+      "media_geral": 59.54,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "MONIQUE EVELY ALMEIDA DE JESUS",
+      "data_nascimento": "22/03/2012",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 69.4,
+        "Arte": 98.0,
+        "Filosofia": 71.0,
+        "Inglês": 59.5,
+        "Matemática": 68.5,
+        "Ciências": 63.5,
+        "Geografia": 77.5,
+        "História": 71.5,
+        "Religião": 63.2
+      },
+      "media_geral": 71.34,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "NATHALIA MOREIRA GOMES",
+      "data_nascimento": "23/08/2012",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 52.8,
+        "Arte": 80.5,
+        "Filosofia": 72.0,
+        "Inglês": 58.2,
+        "Matemática": 50.1,
+        "Ciências": 50.0,
+        "Geografia": 50.0,
+        "História": 51.0,
+        "Religião": 88.4
+      },
+      "media_geral": 61.44,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "NATHAN FRANCO DIAS",
+      "data_nascimento": "07/01/2014",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 76.1,
+        "Arte": 90.5,
+        "Filosofia": 74.0,
+        "Inglês": 85.5,
+        "Matemática": 58.5,
+        "Ciências": 70.0,
+        "Geografia": 97.5,
+        "História": 80.7,
+        "Religião": 81.2
+      },
+      "media_geral": 79.33,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "PAULO FERNANDO BARBOSA SILVESTRE",
+      "data_nascimento": "12/05/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 63.0,
+        "Filosofia": 75.0,
+        "Inglês": 50.2,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 50.5,
+        "História": 52.4,
+        "Religião": 50.9
+      },
+      "media_geral": 54.67,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "PIETRO SOUZA RAMOS",
+      "data_nascimento": "14/04/2014",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.6,
+        "Arte": 62.0,
+        "Filosofia": 75.0,
+        "Inglês": 71.0,
+        "Matemática": 67.5,
+        "Ciências": 50.0,
+        "Geografia": 74.5,
+        "História": 56.3,
+        "Religião": 80.0
+      },
+      "media_geral": 65.32,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "REYMYSON EMANOEL CRUZ DOS SANTOS",
+      "data_nascimento": "13/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 15.0,
+        "Arte": 20.0,
+        "Filosofia": 24.0,
+        "Inglês": 15.5,
+        "Matemática": 3.0,
+        "Ciências": 4.0,
+        "Geografia": 0.0,
+        "História": 11.8,
+        "Religião": 5.0
+      },
+      "media_geral": 10.92,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "RICHARD TRINDADE COSTA",
+      "data_nascimento": "06/02/2014",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 74.0,
+        "Filosofia": 77.0,
+        "Inglês": 54.0,
+        "Matemática": 50.0,
+        "Ciências": 54.0,
+        "Geografia": 55.0,
+        "História": 41.4,
+        "Religião": 60.2
+      },
+      "media_geral": 57.29,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "SAMUEL NASCIMENTO ROCHA",
+      "data_nascimento": "19/10/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 52.6,
+        "Arte": 79.5,
+        "Filosofia": 81.0,
+        "Inglês": 78.5,
+        "Matemática": 59.0,
+        "Ciências": 56.5,
+        "Geografia": 82.5,
+        "História": 57.5,
+        "Religião": 84.6
+      },
+      "media_geral": 70.19,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "SILAS EMANUEL NEVES DE ALMEIDA",
+      "data_nascimento": "09/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 22.6,
+        "Arte": 80.0,
+        "Filosofia": 72.0,
+        "Inglês": 19.2,
+        "Matemática": 23.8,
+        "Ciências": 41.0,
+        "Geografia": 38.0,
+        "História": 22.7,
+        "Religião": 38.8
+      },
+      "media_geral": 39.79,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "TAYSON DOS REIS SOUZA",
+      "data_nascimento": "11/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.7,
+        "Arte": 79.5,
+        "Filosofia": 75.0,
+        "Inglês": 74.0,
+        "Matemática": 64.5,
+        "Ciências": 57.0,
+        "Geografia": 62.5,
+        "História": 59.5,
+        "Religião": 90.1
+      },
+      "media_geral": 68.2,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "THAYLLA VICTORIA DOS SANTOS\nBARBOSA",
+      "data_nascimento": "22/10/2013",
+      "sexo": "F",
+      "turma": "6º ANO A",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 85.0,
+        "Arte": 85.5,
+        "Filosofia": 81.0,
+        "Inglês": 88.5,
+        "Matemática": 76.5,
+        "Ciências": 69.5,
+        "Geografia": 99.0,
+        "História": 87.5,
+        "Religião": 95.2
+      },
+      "media_geral": 85.3,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ALICE FERNANDES MONTEIRO",
+      "data_nascimento": "08/01/2013",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 43.1,
+        "Arte": 94.0,
+        "Filosofia": 68.0,
+        "Inglês": 52.5,
+        "Matemática": 50.0,
+        "Ciências": 51.0,
+        "Geografia": 61.0,
+        "História": 42.6,
+        "Religião": 67.6
+      },
+      "media_geral": 58.87,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ANA JULIA DE OLIVEIRA SANTOS",
+      "data_nascimento": "05/01/2014",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 52.4,
+        "Arte": 98.0,
+        "Filosofia": 87.0,
+        "Inglês": 74.0,
+        "Matemática": 61.5,
+        "Ciências": 50.0,
+        "Geografia": 68.5,
+        "História": 66.5,
+        "Religião": 93.0
+      },
+      "media_geral": 72.32,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANA LETICIA SANTOS CONCEICAO",
+      "data_nascimento": "09/06/2013",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 93.0,
+        "Filosofia": 84.0,
+        "Inglês": 65.5,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 70.0,
+        "História": 58.7,
+        "Religião": 70.2
+      },
+      "media_geral": 65.71,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "DANDARA OLIVEIRA NASCIMENTO",
+      "data_nascimento": "28/10/2013",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 80.9,
+        "Arte": 94.0,
+        "Filosofia": 82.0,
+        "Inglês": 91.7,
+        "Matemática": 87.5,
+        "Ciências": 74.5,
+        "Geografia": 99.0,
+        "História": 84.3,
+        "Religião": 94.2
+      },
+      "media_geral": 87.57,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "DANIEL SANTOS DO NASCIMENTO",
+      "data_nascimento": "01/05/2012",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 20.9,
+        "Arte": 77.0,
+        "Filosofia": 75.0,
+        "Inglês": 12.0,
+        "Matemática": 11.5,
+        "Ciências": 17.0,
+        "Geografia": 28.0,
+        "História": 23.5,
+        "Religião": 25.0
+      },
+      "media_geral": 32.21,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "DAVI FERRAZ DOS SANTOS",
+      "data_nascimento": "16/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 41.7,
+        "Arte": 60.0,
+        "Filosofia": 77.0,
+        "Inglês": 53.5,
+        "Matemática": 52.5,
+        "Ciências": 50.0,
+        "Geografia": 54.0,
+        "História": 54.5,
+        "Religião": 77.4
+      },
+      "media_geral": 57.84,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "DAVI MOREIRA ANDRADE",
+      "data_nascimento": "21/04/2012",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 53.0,
+        "Arte": 77.0,
+        "Filosofia": 74.0,
+        "Inglês": 53.0,
+        "Matemática": 54.0,
+        "Ciências": 50.5,
+        "Geografia": 50.0,
+        "História": 50.0,
+        "Religião": 53.4
+      },
+      "media_geral": 57.21,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "DAVI SILVA RODRIGUES",
+      "data_nascimento": "16/03/2014",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 57.0,
+        "Arte": 66.0,
+        "Filosofia": 80.0,
+        "Inglês": 50.0,
+        "Matemática": 50.0,
+        "Ciências": 52.0,
+        "Geografia": 88.5,
+        "História": 57.5,
+        "Religião": 91.0
+      },
+      "media_geral": 65.78,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "EDUARDO DOS SANTOS MUNIZ",
+      "data_nascimento": "05/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 89.6,
+        "Arte": 84.0,
+        "Filosofia": 81.0,
+        "Inglês": 95.0,
+        "Matemática": 70.5,
+        "Ciências": 79.0,
+        "Geografia": 95.5,
+        "História": 100.0,
+        "Religião": 90.5
+      },
+      "media_geral": 87.23,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "FABIANA CONCEICAO DE OLIVEIRA",
+      "data_nascimento": "26/06/2013",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 73.9,
+        "Arte": 95.0,
+        "Filosofia": 81.0,
+        "Inglês": 88.0,
+        "Matemática": 67.5,
+        "Ciências": 58.0,
+        "Geografia": 97.0,
+        "História": 70.0,
+        "Religião": 91.2
+      },
+      "media_geral": 80.18,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "FYLIPE LAURETI ANDRADE",
+      "data_nascimento": "02/05/2011",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 28.9,
+        "Arte": 59.0,
+        "Filosofia": 67.0,
+        "Inglês": 32.0,
+        "Matemática": 11.0,
+        "Ciências": 28.8,
+        "Geografia": 50.0,
+        "História": 21.9,
+        "Religião": 34.3
+      },
+      "media_geral": 36.99,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "GUSTAVO CONCEICAO OLIVEIRA",
+      "data_nascimento": "24/10/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 71.6,
+        "Arte": 69.0,
+        "Filosofia": 75.0,
+        "Inglês": 70.5,
+        "Matemática": 87.5,
+        "Ciências": 64.0,
+        "Geografia": 80.0,
+        "História": 74.5,
+        "Religião": 91.0
+      },
+      "media_geral": 75.9,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "HEYTOR COUTINHO OLIVEIRA DE JESUS\nFARIA",
+      "data_nascimento": "21/03/2014",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 54.6,
+        "Arte": 91.0,
+        "Filosofia": 75.0,
+        "Inglês": 51.0,
+        "Matemática": 50.0,
+        "Ciências": 47.0,
+        "Geografia": 77.5,
+        "História": 65.0,
+        "Religião": 67.5
+      },
+      "media_geral": 64.29,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ISADORA SOUZA DOS SANTOS",
+      "data_nascimento": "21/11/2011",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 45.5,
+        "Arte": 61.0,
+        "Filosofia": 81.0,
+        "Inglês": 51.0,
+        "Matemática": 50.5,
+        "Ciências": 50.0,
+        "Geografia": 55.0,
+        "História": 51.3,
+        "Religião": 81.2
+      },
+      "media_geral": 58.5,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ISRAEL OLIVEIRA DA GAMA",
+      "data_nascimento": "08/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 53.5,
+        "Arte": 50.0,
+        "Filosofia": 76.0,
+        "Inglês": 50.0,
+        "Matemática": 54.0,
+        "Ciências": 43.0,
+        "Geografia": 50.0,
+        "História": 50.0,
+        "Religião": 54.5
+      },
+      "media_geral": 53.44,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ITANAWANA SANTOS DE SOUZA",
+      "data_nascimento": "26/05/2013",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 80.5,
+        "Arte": 100.0,
+        "Filosofia": 77.0,
+        "Inglês": 76.7,
+        "Matemática": 54.5,
+        "Ciências": 70.0,
+        "Geografia": 81.0,
+        "História": 61.5,
+        "Religião": 93.2
+      },
+      "media_geral": 77.16,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JOAO MIGUEL LOURES SILVA",
+      "data_nascimento": "12/01/2014",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.6,
+        "Arte": 74.0,
+        "Filosofia": 82.0,
+        "Inglês": 58.5,
+        "Matemática": 50.0,
+        "Ciências": 31.0,
+        "Geografia": 56.5,
+        "História": 56.5,
+        "Religião": 70.5
+      },
+      "media_geral": 58.84,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "JOSEPH TIMBOIBA RIO BRANCO",
+      "data_nascimento": "17/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "JOVENILDO BORGES FERREIRA",
+      "data_nascimento": "12/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "KAIKY SILVA RODRIGUES",
+      "data_nascimento": "22/11/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.9,
+        "Arte": 70.5,
+        "Filosofia": 80.0,
+        "Inglês": 63.0,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 52.0,
+        "História": 53.0,
+        "Religião": 65.2
+      },
+      "media_geral": 59.51,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "KALLEL PIETRO RICARDO HENRIQUES",
+      "data_nascimento": "20/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 65.5,
+        "Arte": 91.0,
+        "Filosofia": 77.0,
+        "Inglês": 54.0,
+        "Matemática": 50.0,
+        "Ciências": 54.5,
+        "Geografia": 71.5,
+        "História": 51.5,
+        "Religião": 65.6
+      },
+      "media_geral": 64.51,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "LAURA FREITAS SANTOS BORGES",
+      "data_nascimento": "10/09/2013",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 56.0,
+        "Arte": 95.0,
+        "Filosofia": 75.0,
+        "Inglês": 79.0,
+        "Matemática": 53.0,
+        "Ciências": 60.0,
+        "Geografia": 50.0,
+        "História": 62.5,
+        "Religião": 73.2
+      },
+      "media_geral": 67.08,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "LUDMYLLA TAVARES DE JESUS",
+      "data_nascimento": "13/07/2013",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 52.0,
+        "Arte": 71.5,
+        "Filosofia": 84.0,
+        "Inglês": 50.7,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 60.0,
+        "História": 54.9,
+        "Religião": 72.0
+      },
+      "media_geral": 60.57,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "MARIA VITORIA DE OLIVEIRA SANTOS",
+      "data_nascimento": "19/05/2012",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.1,
+        "Arte": 88.0,
+        "Filosofia": 57.0,
+        "Inglês": 67.0,
+        "Matemática": 63.5,
+        "Ciências": 56.5,
+        "Geografia": 81.0,
+        "História": 63.8,
+        "Religião": 92.0
+      },
+      "media_geral": 68.88,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "MAYLLA NOGUEIRA DE PAULA",
+      "data_nascimento": "08/03/2014",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 87.1,
+        "Arte": 95.0,
+        "Filosofia": 50.0,
+        "Inglês": 85.0,
+        "Matemática": 80.5,
+        "Ciências": 57.5,
+        "Geografia": 94.0,
+        "História": 94.0,
+        "Religião": 90.2
+      },
+      "media_geral": 81.48,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "MICAEL RODRIGUES SANTOS",
+      "data_nascimento": "17/05/2012",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 54.3,
+        "Arte": 83.0,
+        "Filosofia": 54.0,
+        "Inglês": 62.0,
+        "Matemática": 60.0,
+        "Ciências": 50.5,
+        "Geografia": 71.0,
+        "História": 57.5,
+        "Religião": 89.6
+      },
+      "media_geral": 64.66,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "NYCOLAS FRANCO DIAS",
+      "data_nascimento": "07/01/2014",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 61.4,
+        "Arte": 93.0,
+        "Filosofia": 48.0,
+        "Inglês": 72.5,
+        "Matemática": 65.0,
+        "Ciências": 62.5,
+        "Geografia": 80.0,
+        "História": 73.0,
+        "Religião": 84.1
+      },
+      "media_geral": 71.06,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "OTÁVIO OLIVEIRA COSTA",
+      "data_nascimento": "23/04/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 66.6,
+        "Arte": 95.0,
+        "Filosofia": 50.0,
+        "Inglês": 60.0,
+        "Matemática": 56.5,
+        "Ciências": 46.0,
+        "Geografia": 74.0,
+        "História": 65.3,
+        "Religião": 69.7
+      },
+      "media_geral": 64.79,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "PAULO KINHONES DE JESUS SILVA",
+      "data_nascimento": "26/12/2013",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 62.6,
+        "Arte": 74.5,
+        "Filosofia": 54.0,
+        "Inglês": 55.0,
+        "Matemática": 72.0,
+        "Ciências": 50.0,
+        "Geografia": 82.0,
+        "História": 71.6,
+        "Religião": 90.6
+      },
+      "media_geral": 68.03,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "REBECCA FRANÇA DO ROSÁRIO",
+      "data_nascimento": "26/09/2008",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 50.0,
+        "Filosofia": 30.0,
+        "Inglês": 57.0,
+        "Matemática": 50.0,
+        "Ciências": 0.0,
+        "Geografia": 35.0,
+        "História": 20.0,
+        "Religião": 50.0
+      },
+      "media_geral": 38.0,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "SAMILLY ARAUJO DO VALE",
+      "data_nascimento": "10/08/2013",
+      "sexo": "F",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 65.2,
+        "Arte": 91.0,
+        "Filosofia": 52.0,
+        "Inglês": 75.2,
+        "Matemática": 65.5,
+        "Ciências": 51.5,
+        "Geografia": 84.0,
+        "História": 76.9,
+        "Religião": 89.2
+      },
+      "media_geral": 72.28,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "UEVERTON CONCEICAO",
+      "data_nascimento": "05/09/2012",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "URIEL RODRIGUES DANTAS",
+      "data_nascimento": "02/02/2014",
+      "sexo": "M",
+      "turma": "6º ANO B",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "ALISON LUIZ DOS ANJOS FERREIRA",
+      "data_nascimento": "13/04/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.1,
+        "Arte": 51.0,
+        "Filosofia": 51.0,
+        "Inglês": 57.5,
+        "Matemática": 43.0,
+        "Ciências": 87.0,
+        "Geografia": 50.5,
+        "História": 69.0,
+        "Religião": 60.0
+      },
+      "media_geral": 57.68,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "AMANDA FERNANDA HONORATO SANTOS",
+      "data_nascimento": "26/04/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 70.0,
+        "Arte": 50.0,
+        "Filosofia": 75.0,
+        "Inglês": 55.0,
+        "Matemática": 49.9,
+        "Ciências": 50.0,
+        "Geografia": 50.0,
+        "História": 52.0,
+        "Religião": 50.0
+      },
+      "media_geral": 55.77,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANA BEATRIZ DE JESUS SILVA",
+      "data_nascimento": "18/09/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "CANCELADO"
+    },
+    {
+      "nome": "ANA BEATRIZ DOS SANTOS NUNES",
+      "data_nascimento": "05/04/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "CANCELADO"
+    },
+    {
+      "nome": "ANDRÉ JÚNIOR DOS SANTOS CHAVES",
+      "data_nascimento": "23/04/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 66.3,
+        "Arte": 74.4,
+        "Filosofia": 78.0,
+        "Inglês": 50.0,
+        "Matemática": 62.5,
+        "Ciências": 55.0,
+        "Geografia": 74.0,
+        "História": 58.7,
+        "Religião": 63.5
+      },
+      "media_geral": 64.71,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANNA SOFHIA DA SILVA SOUZA OLIVEIRA",
+      "data_nascimento": "26/03/2014",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.2,
+        "Arte": 81.0,
+        "Filosofia": 81.5,
+        "Inglês": 54.8,
+        "Matemática": 53.5,
+        "Ciências": 54.8,
+        "Geografia": 59.6,
+        "História": 65.0,
+        "Religião": 51.8
+      },
+      "media_geral": 61.36,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANTHONY DE JESUS DA SILVA ANDRADE",
+      "data_nascimento": "09/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "ANTONY GABRIEL DE JESUS SOUZA",
+      "data_nascimento": "30/11/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 37.6,
+        "Arte": 58.0,
+        "Filosofia": 77.0,
+        "Inglês": 38.7,
+        "Matemática": 38.5,
+        "Ciências": 28.0,
+        "Geografia": 31.3,
+        "História": 58.0,
+        "Religião": 64.5
+      },
+      "media_geral": 47.96,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "CARLOS EDUARDO DE OLIVEIRA\nFERNANDES",
+      "data_nascimento": "29/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.2,
+        "Arte": 66.5,
+        "Filosofia": 77.5,
+        "Inglês": 58.8,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 67.0,
+        "História": 69.0,
+        "Religião": 50.0
+      },
+      "media_geral": 60.0,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "CARLOS EDUARDO LACERDA NEVES",
+      "data_nascimento": "25/11/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "DANIEL ROCHA AMORIM",
+      "data_nascimento": "26/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 56.0,
+        "Filosofia": 77.0,
+        "Inglês": 50.5,
+        "Matemática": 59.0,
+        "Ciências": 50.5,
+        "Geografia": 55.3,
+        "História": 58.1,
+        "Religião": 62.5
+      },
+      "media_geral": 57.66,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "DANYLO HUAN BONNI MORAIS",
+      "data_nascimento": "08/11/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 53.1,
+        "Arte": 69.0,
+        "Filosofia": 72.0,
+        "Inglês": 72.0,
+        "Matemática": 57.0,
+        "Ciências": 53.0,
+        "Geografia": 79.5,
+        "História": 73.9,
+        "Religião": 75.5
+      },
+      "media_geral": 67.22,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "DAVI SILVA KRETLI",
+      "data_nascimento": "05/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.1,
+        "Arte": 90.0,
+        "Filosofia": 75.0,
+        "Inglês": 64.5,
+        "Matemática": 69.0,
+        "Ciências": 50.0,
+        "Geografia": 66.0,
+        "História": 74.8,
+        "Religião": 83.0
+      },
+      "media_geral": 69.16,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "DAVID ROCHA AMORIM",
+      "data_nascimento": "22/10/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 54.5,
+        "Arte": 86.0,
+        "Filosofia": 75.0,
+        "Inglês": 50.0,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 52.0,
+        "História": 70.6,
+        "Religião": 77.0
+      },
+      "media_geral": 62.79,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "EMANUEL SEVENAME OLIVEIRA",
+      "data_nascimento": "26/03/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 81.2,
+        "Arte": 74.0,
+        "Filosofia": 83.0,
+        "Inglês": 54.5,
+        "Matemática": 61.0,
+        "Ciências": 48.5,
+        "Geografia": 58.5,
+        "História": 71.0,
+        "Religião": 62.0
+      },
+      "media_geral": 65.97,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "EYSLA LAVINNIA SANTOS DA SILVA",
+      "data_nascimento": "09/09/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 69.5,
+        "Arte": 92.5,
+        "Filosofia": 71.0,
+        "Inglês": 83.5,
+        "Matemática": 59.0,
+        "Ciências": 51.0,
+        "Geografia": 74.0,
+        "História": 86.7,
+        "Religião": 89.5
+      },
+      "media_geral": 75.19,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "FELIPE PEREIRA DE SOUZA",
+      "data_nascimento": "21/11/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 41.2,
+        "Arte": 65.0,
+        "Filosofia": 81.0,
+        "Inglês": 27.8,
+        "Matemática": 41.8,
+        "Ciências": 46.5,
+        "Geografia": 48.3,
+        "História": 54.8,
+        "Religião": 71.5
+      },
+      "media_geral": 53.1,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "FRANCISLEIA SANTOS CONCEICAO",
+      "data_nascimento": "08/12/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 23.0,
+        "Arte": 73.0,
+        "Filosofia": 68.0,
+        "Inglês": 22.7,
+        "Matemática": 16.0,
+        "Ciências": 32.0,
+        "Geografia": 58.0,
+        "História": 39.2,
+        "Religião": 63.0
+      },
+      "media_geral": 43.88,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "HAYLA OLIVEIRA GAMA",
+      "data_nascimento": "25/11/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 73.8,
+        "Arte": 95.0,
+        "Filosofia": 66.0,
+        "Inglês": 67.5,
+        "Matemática": 59.5,
+        "Ciências": 56.5,
+        "Geografia": 85.0,
+        "História": 82.6,
+        "Religião": 90.5
+      },
+      "media_geral": 75.16,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "IAN JANUARIO DIAS",
+      "data_nascimento": "15/07/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 53.0,
+        "Arte": 51.5,
+        "Filosofia": 75.0,
+        "Inglês": 51.0,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 60.5,
+        "História": 50.0,
+        "Religião": 68.5
+      },
+      "media_geral": 56.61,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ISABEL CASTRO DE OLIVEIRA",
+      "data_nascimento": "27/05/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 85.6,
+        "Arte": 99.0,
+        "Filosofia": 66.0,
+        "Inglês": 96.0,
+        "Matemática": 81.0,
+        "Ciências": 66.0,
+        "Geografia": 91.5,
+        "História": 84.3,
+        "Religião": 96.2
+      },
+      "media_geral": 85.07,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JAMILLY DA SILVA NEVES",
+      "data_nascimento": "22/12/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 76.8,
+        "Arte": 99.5,
+        "Filosofia": 67.0,
+        "Inglês": 87.8,
+        "Matemática": 69.5,
+        "Ciências": 59.0,
+        "Geografia": 87.5,
+        "História": 84.7,
+        "Religião": 93.5
+      },
+      "media_geral": 80.59,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KAIO CARLOS NERES SANTOS",
+      "data_nascimento": "15/08/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "KAMILY VITORIA SENA DE OLIVEIRA",
+      "data_nascimento": "22/06/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 75.6,
+        "Arte": 98.0,
+        "Filosofia": 63.0,
+        "Inglês": 62.2,
+        "Matemática": 64.5,
+        "Ciências": 52.0,
+        "Geografia": 87.5,
+        "História": 84.0,
+        "Religião": 65.2
+      },
+      "media_geral": 72.44,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KAUAN SOUZA OLIVEIRA",
+      "data_nascimento": "03/05/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 38.9,
+        "Arte": 55.0,
+        "Filosofia": 136.0,
+        "Inglês": 35.1,
+        "Matemática": 39.5,
+        "Ciências": 39.5,
+        "Geografia": 53.3,
+        "História": 47.4,
+        "Religião": 80.6
+      },
+      "media_geral": 58.37,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "LARISSA CARIBE BORGES",
+      "data_nascimento": "07/10/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 55.4,
+        "Arte": 94.0,
+        "Filosofia": 63.0,
+        "Inglês": 50.0,
+        "Matemática": 50.0,
+        "Ciências": 63.0,
+        "Geografia": 58.0,
+        "História": 62.2,
+        "Religião": 73.0
+      },
+      "media_geral": 63.18,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "LUCAS FABYAN MATIAS SOUZA",
+      "data_nascimento": "28/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.7,
+        "Arte": 75.0,
+        "Filosofia": 72.0,
+        "Inglês": 73.5,
+        "Matemática": 50.0,
+        "Ciências": 56.5,
+        "Geografia": 51.5,
+        "História": 50.0,
+        "Religião": 62.0
+      },
+      "media_geral": 60.24,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "LUCAS MARQUES NASCIMENTO",
+      "data_nascimento": "07/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 70.0,
+        "Filosofia": 75.0,
+        "Inglês": 55.1,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 56.0,
+        "História": 51.7,
+        "Religião": 56.5
+      },
+      "media_geral": 57.14,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "LUIS EDUARDO RAMOS SANTOS",
+      "data_nascimento": "30/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 78.0,
+        "Filosofia": 69.0,
+        "Inglês": 66.7,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 50.5,
+        "História": 60.6,
+        "Religião": 50.8
+      },
+      "media_geral": 58.4,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "LUNA DE JESUS DA SILVA ANDRADE",
+      "data_nascimento": "27/10/2014",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "MARCOS VINICIUS FAUSTINO DOS\nSANTOS",
+      "data_nascimento": "09/01/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 17.4,
+        "Arte": 58.0,
+        "Filosofia": 78.0,
+        "Inglês": 28.1,
+        "Matemática": 23.8,
+        "Ciências": 45.5,
+        "Geografia": 26.0,
+        "História": 32.6,
+        "Religião": 48.5
+      },
+      "media_geral": 39.77,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "MARIA LUIZA CONCEICAO SILVA",
+      "data_nascimento": "11/12/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 38.5,
+        "Arte": 80.0,
+        "Filosofia": 63.0,
+        "Inglês": 41.5,
+        "Matemática": 23.5,
+        "Ciências": 44.5,
+        "Geografia": 36.0,
+        "História": 55.9,
+        "Religião": 56.5
+      },
+      "media_geral": 48.82,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "MATEUS HENRI DA SILVA SANTOS",
+      "data_nascimento": "18/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 82.0,
+        "Filosofia": 80.0,
+        "Inglês": 50.0,
+        "Matemática": 50.0,
+        "Ciências": 53.0,
+        "Geografia": 50.5,
+        "História": 62.5,
+        "Religião": 50.0
+      },
+      "media_geral": 58.67,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "NYCOLAS SILVA DE OLIVEIRA",
+      "data_nascimento": "17/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 17.7,
+        "Arte": 59.5,
+        "Filosofia": 69.0,
+        "Inglês": 24.6,
+        "Matemática": 17.5,
+        "Ciências": 32.1,
+        "Geografia": 17.0,
+        "História": 33.1,
+        "Religião": 56.5
+      },
+      "media_geral": 36.33,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "PATRICIA BISPO SOARES",
+      "data_nascimento": "30/07/2013",
+      "sexo": "F",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 63.1,
+        "Arte": 93.0,
+        "Filosofia": 72.0,
+        "Inglês": 62.2,
+        "Matemática": 52.0,
+        "Ciências": 67.0,
+        "Geografia": 80.5,
+        "História": 86.7,
+        "Religião": 87.6
+      },
+      "media_geral": 73.79,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "PIETRO SOUZA TEIXEIRA",
+      "data_nascimento": "21/05/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 90.0,
+        "Filosofia": 77.0,
+        "Inglês": 63.1,
+        "Matemática": 54.5,
+        "Ciências": 46.0,
+        "Geografia": 58.5,
+        "História": 70.2,
+        "Religião": 77.0
+      },
+      "media_geral": 65.14,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "PYETRO SOUZA LOPES",
+      "data_nascimento": "02/12/2013",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 82.2,
+        "Arte": 97.0,
+        "Filosofia": 74.0,
+        "Inglês": 85.5,
+        "Matemática": 71.5,
+        "Ciências": 53.0,
+        "Geografia": 88.0,
+        "História": 84.1,
+        "Religião": 89.5
+      },
+      "media_geral": 80.53,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "THIAGO BARBOSA LOPES",
+      "data_nascimento": "22/03/2012",
+      "sexo": "M",
+      "turma": "6º ANO C",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 18.5,
+        "Arte": 62.0,
+        "Filosofia": 78.0,
+        "Inglês": 19.3,
+        "Matemática": 13.0,
+        "Ciências": 25.5,
+        "Geografia": 13.0,
+        "História": 33.4,
+        "Religião": 50.5
+      },
+      "media_geral": 34.8,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ADRYAN PURCIDONIO SANTOS",
+      "data_nascimento": "19/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 51.0,
+        "Filosofia": 67.0,
+        "Inglês": 57.0,
+        "Matemática": 51.3,
+        "Ciências": 50.0,
+        "Geografia": 52.8,
+        "História": 55.3,
+        "Religião": 51.2
+      },
+      "media_geral": 53.96,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "ALEX GONCALVES FERNANDES",
+      "data_nascimento": "29/05/2012",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 2.0,
+        "Arte": 50.0,
+        "Filosofia": 71.0,
+        "Inglês": 11.5,
+        "Matemática": 5.4,
+        "Ciências": 17.6,
+        "Geografia": 5.0,
+        "História": 13.0,
+        "Religião": 0.0
+      },
+      "media_geral": 19.5,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ANA BEATRIZ DE JESUS SILVA",
+      "data_nascimento": "18/09/2013",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 70.1,
+        "Arte": 78.0,
+        "Filosofia": 75.0,
+        "Inglês": 55.5,
+        "Matemática": 61.4,
+        "Ciências": 45.0,
+        "Geografia": 63.0,
+        "História": 70.7,
+        "Religião": 81.2
+      },
+      "media_geral": 66.66,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ANA BEATRIZ DOS SANTOS NUNES",
+      "data_nascimento": "05/04/2013",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 72.6,
+        "Arte": 84.0,
+        "Filosofia": 66.0,
+        "Inglês": 78.0,
+        "Matemática": 63.1,
+        "Ciências": 54.5,
+        "Geografia": 74.0,
+        "História": 78.3,
+        "Religião": 88.3
+      },
+      "media_geral": 73.2,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ARTHUR TAVARES BARBOSA",
+      "data_nascimento": "15/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.8,
+        "Arte": 60.0,
+        "Filosofia": 67.0,
+        "Inglês": 51.5,
+        "Matemática": 50.0,
+        "Ciências": 50.5,
+        "Geografia": 62.0,
+        "História": 58.0,
+        "Religião": 59.0
+      },
+      "media_geral": 56.64,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "BRYAN WILLIAM CARDOZO AVELAR",
+      "data_nascimento": "11/01/2010",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.3,
+        "Arte": 52.0,
+        "Filosofia": 67.0,
+        "Inglês": 51.0,
+        "Matemática": 68.1,
+        "Ciências": 58.5,
+        "Geografia": 58.5,
+        "História": 57.5,
+        "Religião": 58.0
+      },
+      "media_geral": 57.99,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "CARLOS ANTONIO MOREIRA GONCALVES",
+      "data_nascimento": "23/05/2012",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 21.0,
+        "Arte": 53.5,
+        "Filosofia": 66.0,
+        "Inglês": 12.9,
+        "Matemática": 20.6,
+        "Ciências": 20.2,
+        "Geografia": 12.5,
+        "História": 28.1,
+        "Religião": 56.2
+      },
+      "media_geral": 32.33,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "DAVI MACARIO SANT´ANA",
+      "data_nascimento": "28/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 54.5,
+        "Arte": 88.0,
+        "Filosofia": 74.0,
+        "Inglês": 51.5,
+        "Matemática": 54.3,
+        "Ciências": 53.5,
+        "Geografia": 73.5,
+        "História": 52.5,
+        "Religião": 54.0
+      },
+      "media_geral": 61.76,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "DAVI MACARIO SANT´ANA",
+      "data_nascimento": "28/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 54.5,
+        "Arte": 88.0,
+        "Filosofia": 74.0,
+        "Inglês": 51.5,
+        "Matemática": 54.3,
+        "Ciências": 53.5,
+        "Geografia": 73.5,
+        "História": 52.5,
+        "Religião": 54.0
+      },
+      "media_geral": 61.76,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "DAVI SANTOS CARDOSO",
+      "data_nascimento": "13/03/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.5,
+        "Arte": 70.0,
+        "Filosofia": 66.0,
+        "Inglês": 63.0,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 55.5,
+        "História": 84.2,
+        "Religião": 68.0
+      },
+      "media_geral": 61.91,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "DHANIELLA VIANA DE OLIVEIRA",
+      "data_nascimento": "09/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 62.6,
+        "Arte": 96.0,
+        "Filosofia": 71.0,
+        "Inglês": 72.5,
+        "Matemática": 68.5,
+        "Ciências": 50.0,
+        "Geografia": 71.0,
+        "História": 71.3,
+        "Religião": 85.5
+      },
+      "media_geral": 72.04,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ELOH OLIVEIRA SILVEIRA",
+      "data_nascimento": "08/10/2013",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 58.3,
+        "Arte": 71.0,
+        "Filosofia": 68.0,
+        "Inglês": 55.0,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 66.0,
+        "História": 59.5,
+        "Religião": 86.4
+      },
+      "media_geral": 62.69,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ENZZO GABRIEL LEMOS OLIVEIRA",
+      "data_nascimento": "08/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 65.5,
+        "Arte": 90.5,
+        "Filosofia": 78.0,
+        "Inglês": 55.3,
+        "Matemática": 76.5,
+        "Ciências": 50.0,
+        "Geografia": 95.0,
+        "História": 95.0,
+        "Religião": 80.6
+      },
+      "media_geral": 76.27,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "EVILLYN SANTOS BONIFÁCIO",
+      "data_nascimento": "28/03/2014",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 83.8,
+        "Arte": 81.0,
+        "Filosofia": 68.0,
+        "Inglês": 45.5,
+        "Matemática": 71.9,
+        "Ciências": 50.0,
+        "Geografia": 89.5,
+        "História": 78.6,
+        "Religião": 79.2
+      },
+      "media_geral": 71.94,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "FABIO CAMARGO DOS SANTOS",
+      "data_nascimento": "29/03/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 24.0,
+        "Arte": 50.5,
+        "Filosofia": 65.0,
+        "Inglês": 27.0,
+        "Matemática": 39.7,
+        "Ciências": 26.5,
+        "Geografia": 38.0,
+        "História": 38.1,
+        "Religião": 46.9
+      },
+      "media_geral": 39.52,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "GABRIEL LOPES SANTOS",
+      "data_nascimento": "10/05/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 87.0,
+        "Arte": 100.0,
+        "Filosofia": 75.0,
+        "Inglês": 54.7,
+        "Matemática": 93.2,
+        "Ciências": 77.5,
+        "Geografia": 98.0,
+        "História": 96.0,
+        "Religião": 89.0
+      },
+      "media_geral": 85.6,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "GABRIELLY DOS SANTOS MIRANDA",
+      "data_nascimento": "24/01/2014",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 52.2,
+        "Arte": 84.0,
+        "Filosofia": 78.0,
+        "Inglês": 30.5,
+        "Matemática": 51.1,
+        "Ciências": 50.0,
+        "Geografia": 58.0,
+        "História": 67.3,
+        "Religião": 70.0
+      },
+      "media_geral": 60.12,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "GLENDA DOS SANTOS PORTELA",
+      "data_nascimento": "02/06/2013",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 72.9,
+        "Arte": 95.0,
+        "Filosofia": 68.0,
+        "Inglês": 38.2,
+        "Matemática": 92.5,
+        "Ciências": 77.5,
+        "Geografia": 97.5,
+        "História": 94.1,
+        "Religião": 92.0
+      },
+      "media_geral": 80.86,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "GUILBERTO ALEIXO SOUZA",
+      "data_nascimento": "06/12/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 62.0,
+        "Arte": 100.0,
+        "Filosofia": 75.0,
+        "Inglês": 39.5,
+        "Matemática": 89.5,
+        "Ciências": 64.0,
+        "Geografia": 81.5,
+        "História": 84.4,
+        "Religião": 85.6
+      },
+      "media_geral": 75.72,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "GUSTTAVO DOMINIK CAMARGO DIAS",
+      "data_nascimento": "10/09/2012",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 34.5,
+        "Arte": 58.0,
+        "Filosofia": 65.0,
+        "Inglês": 19.0,
+        "Matemática": 32.6,
+        "Ciências": 37.1,
+        "Geografia": 42.0,
+        "História": 43.6,
+        "Religião": 37.7
+      },
+      "media_geral": 41.06,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "IZABELLY VITORIA FURTUNATO PAYVUNA\nSILVA",
+      "data_nascimento": "10/12/2012",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 38.3,
+        "Arte": 50.0,
+        "Filosofia": 63.0,
+        "Inglês": 35.0,
+        "Matemática": 37.0,
+        "Ciências": 33.6,
+        "Geografia": 52.5,
+        "História": 35.0,
+        "Religião": 50.5
+      },
+      "media_geral": 43.88,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "KAILAN DOS SANTOS ALBINO",
+      "data_nascimento": "30/12/2012",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 23.7,
+        "Arte": 53.0,
+        "Filosofia": 51.0,
+        "Inglês": 4.5,
+        "Matemática": 12.6,
+        "Ciências": 22.5,
+        "Geografia": 26.0,
+        "História": 16.0,
+        "Religião": 31.5
+      },
+      "media_geral": 26.76,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "KETLHYN LAYSLA PEREIRA DOMINGOS",
+      "data_nascimento": "29/10/2012",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 61.9,
+        "Arte": 92.0,
+        "Filosofia": 75.0,
+        "Inglês": 35.5,
+        "Matemática": 60.3,
+        "Ciências": 54.5,
+        "Geografia": 71.0,
+        "História": 65.9,
+        "Religião": 72.4
+      },
+      "media_geral": 65.39,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "LARA DOS SANTOS NEVES",
+      "data_nascimento": "12/08/2013",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.7,
+        "Arte": 78.0,
+        "Filosofia": 69.0,
+        "Inglês": 40.8,
+        "Matemática": 51.4,
+        "Ciências": 51.5,
+        "Geografia": 59.0,
+        "História": 58.7,
+        "Religião": 77.5
+      },
+      "media_geral": 59.73,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "LUIZ FELIPE SANTOS FRANCO",
+      "data_nascimento": "23/10/2012",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 20.3,
+        "Arte": 53.0,
+        "Filosofia": 51.0,
+        "Inglês": 20.8,
+        "Matemática": 39.5,
+        "Ciências": 14.5,
+        "Geografia": 21.0,
+        "História": 19.5,
+        "Religião": 28.5
+      },
+      "media_geral": 29.79,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "LUIZ FERNANDO ANDRADE MORAES",
+      "data_nascimento": "12/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 32.5,
+        "Arte": 56.5,
+        "Filosofia": 68.0,
+        "Inglês": 17.0,
+        "Matemática": 29.7,
+        "Ciências": 37.5,
+        "Geografia": 43.0,
+        "História": 45.2,
+        "Religião": 23.6
+      },
+      "media_geral": 39.22,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "PEDRO JOSE SANTOS FLEGLE",
+      "data_nascimento": "05/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.3,
+        "Arte": 67.0,
+        "Filosofia": 51.0,
+        "Inglês": 31.0,
+        "Matemática": 69.7,
+        "Ciências": 55.5,
+        "Geografia": 50.0,
+        "História": 58.0,
+        "Religião": 51.5
+      },
+      "media_geral": 53.78,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "RIQUELME DOS SANTOS SILVA",
+      "data_nascimento": "26/01/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 29.7,
+        "Arte": 51.5,
+        "Filosofia": 68.0,
+        "Inglês": 16.0,
+        "Matemática": 50.0,
+        "Ciências": 24.5,
+        "Geografia": 26.3,
+        "História": 53.6,
+        "Religião": 51.9
+      },
+      "media_geral": 41.28,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "RUAN TALYS DIAS BATISTA",
+      "data_nascimento": "19/12/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 31.6,
+        "Arte": 50.0,
+        "Filosofia": 68.0,
+        "Inglês": 34.0,
+        "Matemática": 41.8,
+        "Ciências": 23.1,
+        "Geografia": 49.8,
+        "História": 38.3,
+        "Religião": 46.0
+      },
+      "media_geral": 42.51,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "SAMUEL MACARIO SANT´ANA",
+      "data_nascimento": "28/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.2,
+        "Arte": 94.0,
+        "Filosofia": 72.0,
+        "Inglês": 43.0,
+        "Matemática": 51.7,
+        "Ciências": 55.0,
+        "Geografia": 74.5,
+        "História": 55.0,
+        "Religião": 50.0
+      },
+      "media_geral": 60.6,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "SAMUEL MACARIO SANT´ANA",
+      "data_nascimento": "28/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 50.2,
+        "Arte": 94.0,
+        "Filosofia": 72.0,
+        "Inglês": 43.0,
+        "Matemática": 51.7,
+        "Ciências": 55.0,
+        "Geografia": 74.5,
+        "História": 55.0,
+        "Religião": 50.0
+      },
+      "media_geral": 60.6,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "THALIS CONCEICAO DOS SANTOS",
+      "data_nascimento": "06/11/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "CANCELADO"
+    },
+    {
+      "nome": "THAYLA PURCIDONIO CONCEICAO",
+      "data_nascimento": "31/10/2013",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 81.9,
+        "Arte": 95.0,
+        "Filosofia": 65.0,
+        "Inglês": 52.9,
+        "Matemática": 95.3,
+        "Ciências": 53.5,
+        "Geografia": 77.5,
+        "História": 87.7,
+        "Religião": 83.0
+      },
+      "media_geral": 76.87,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "WEMERSON NASCIMENTO",
+      "data_nascimento": "04/08/2011",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 11.7,
+        "Arte": 50.5,
+        "Filosofia": 36.0,
+        "Inglês": 19.0,
+        "Matemática": 18.0,
+        "Ciências": 25.0,
+        "Geografia": 46.0,
+        "História": 37.3,
+        "Religião": 57.8
+      },
+      "media_geral": 33.48,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "WERLIS VAN LUIZ MACHADO",
+      "data_nascimento": "29/03/2014",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 51.7,
+        "Arte": 78.0,
+        "Filosofia": 65.0,
+        "Inglês": 42.1,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 53.0,
+        "História": 54.8,
+        "Religião": 50.5
+      },
+      "media_geral": 55.01,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "YASMIN SOFIA DOS SANTOS GONCALVES",
+      "data_nascimento": "01/07/2013",
+      "sexo": "F",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {
+        "Português": 73.3,
+        "Arte": 94.5,
+        "Filosofia": 66.0,
+        "Inglês": 51.0,
+        "Matemática": 88.9,
+        "Ciências": 52.5,
+        "Geografia": 90.0,
+        "História": 83.3,
+        "Religião": 85.2
+      },
+      "media_geral": 76.08,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "YTALO SAMUEL DIAS SALVINO",
+      "data_nascimento": "07/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO D",
+      "turno": "MATUTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "CANCELADO"
+    },
+    {
+      "nome": "ALICE GUIMARAES DOS SANTOS",
+      "data_nascimento": "02/12/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 93.5,
+        "Arte": 81.0,
+        "Filosofia": 81.0,
+        "Inglês": 88.1,
+        "Matemática": 93.0,
+        "Ciências": 95.5,
+        "Geografia": 98.0,
+        "História": 77.5,
+        "Religião": 55.0
+      },
+      "media_geral": 84.73,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANA JHULIA GONCALVES SILVA",
+      "data_nascimento": "04/05/2013",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 24.0,
+        "Arte": 44.0,
+        "Filosofia": 69.0,
+        "Inglês": 37.0,
+        "Matemática": 27.5,
+        "Ciências": 20.0,
+        "Geografia": 31.0,
+        "História": 29.5,
+        "Religião": 50.0
+      },
+      "media_geral": 36.89,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ANA VITORIA ESPERANCA LUIZ",
+      "data_nascimento": "06/02/2013",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 51.5,
+        "Arte": 67.5,
+        "Filosofia": 79.0,
+        "Inglês": 53.0,
+        "Matemática": 46.3,
+        "Ciências": 54.5,
+        "Geografia": 52.5,
+        "História": 50.4,
+        "Religião": 67.0
+      },
+      "media_geral": 57.97,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANNA JULIA SOARES BALDOVINO",
+      "data_nascimento": "18/07/2013",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 59.3,
+        "Arte": 73.0,
+        "Filosofia": 81.0,
+        "Inglês": 66.0,
+        "Matemática": 58.0,
+        "Ciências": 66.5,
+        "Geografia": 60.5,
+        "História": 57.3,
+        "Religião": 70.0
+      },
+      "media_geral": 65.73,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANTHONY DE JESUS DA SILVA ANDRADE",
+      "data_nascimento": "09/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 57.5,
+        "Arte": 50.0,
+        "Filosofia": 84.0,
+        "Inglês": 50.7,
+        "Matemática": 57.0,
+        "Ciências": 59.0,
+        "Geografia": 56.4,
+        "História": 50.0,
+        "Religião": 62.5
+      },
+      "media_geral": 58.57,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "CARLOS EDUARDO COSTA SILVA",
+      "data_nascimento": "12/04/2012",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 53.5,
+        "Arte": 60.0,
+        "Filosofia": 79.0,
+        "Inglês": 55.0,
+        "Matemática": 51.0,
+        "Ciências": 71.0,
+        "Geografia": 51.5,
+        "História": 51.2,
+        "Religião": 57.0
+      },
+      "media_geral": 58.8,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "DANIEL DE JESUS OLIVEIRA",
+      "data_nascimento": "29/04/2012",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "DANIELLY FERREIRA GONÇALVES",
+      "data_nascimento": "12/07/2012",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 11.8,
+        "Arte": 36.0,
+        "Filosofia": 69.0,
+        "Inglês": 19.0,
+        "Matemática": 12.0,
+        "Ciências": 20.0,
+        "Geografia": 18.5,
+        "História": 10.5,
+        "Religião": 61.0
+      },
+      "media_geral": 28.64,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "DAVI LUCAS ANIZIO",
+      "data_nascimento": "06/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 19.3,
+        "Arte": 46.0,
+        "Filosofia": 77.0,
+        "Inglês": 16.0,
+        "Matemática": 12.5,
+        "Ciências": 12.5,
+        "Geografia": 20.0,
+        "História": 14.5,
+        "Religião": 38.0
+      },
+      "media_geral": 28.42,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "DAVI MOREIRA ANDRADE",
+      "data_nascimento": "21/04/2012",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "CANCELADO"
+    },
+    {
+      "nome": "DAVID KAUAN SILVA MELO",
+      "data_nascimento": "13/02/2011",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "EMANUEL SEVENAME OLIVEIRA",
+      "data_nascimento": "26/03/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "CANCELADO"
+    },
+    {
+      "nome": "EMANUELLE GUILHERME DOS SANTOS",
+      "data_nascimento": "12/03/2012",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 30.5,
+        "Arte": 50.5,
+        "Filosofia": 71.0,
+        "Inglês": 53.6,
+        "Matemática": 12.9,
+        "Ciências": 23.0,
+        "Geografia": 27.5,
+        "História": 35.5,
+        "Religião": 49.0
+      },
+      "media_geral": 39.28,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "EMILLY NASCIMENTO DE JESUS",
+      "data_nascimento": "17/02/2014",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 60.0,
+        "Arte": 64.0,
+        "Filosofia": 81.0,
+        "Inglês": 86.3,
+        "Matemática": 81.0,
+        "Ciências": 86.5,
+        "Geografia": 82.5,
+        "História": 64.3,
+        "Religião": 75.0
+      },
+      "media_geral": 75.62,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "EMILY DOS SANTOS ALVES",
+      "data_nascimento": "22/02/2013",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "GABRIELLY PEREIRA DOS SANTOS",
+      "data_nascimento": "10/10/2011",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 18.8,
+        "Arte": 54.0,
+        "Filosofia": 70.0,
+        "Inglês": 50.0,
+        "Matemática": 23.5,
+        "Ciências": 26.5,
+        "Geografia": 27.0,
+        "História": 24.4,
+        "Religião": 69.0
+      },
+      "media_geral": 40.36,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "GABRYEL VALERIO ROCHA",
+      "data_nascimento": "08/10/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 53.4,
+        "Arte": 60.0,
+        "Filosofia": 77.0,
+        "Inglês": 50.6,
+        "Matemática": 47.0,
+        "Ciências": 51.0,
+        "Geografia": 53.5,
+        "História": 50.8,
+        "Religião": 56.0
+      },
+      "media_geral": 55.48,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "HIAN PEREIRA SANTOS",
+      "data_nascimento": "29/01/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 25.5,
+        "Arte": 44.0,
+        "Filosofia": 78.0,
+        "Inglês": 50.0,
+        "Matemática": 35.8,
+        "Ciências": 51.5,
+        "Geografia": 43.5,
+        "História": 17.0,
+        "Religião": 47.0
+      },
+      "media_geral": 43.59,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ISABELLA MOREIRA RODRIGUES",
+      "data_nascimento": "16/07/2013",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 89.5,
+        "Arte": 79.0,
+        "Filosofia": 81.0,
+        "Inglês": 86.5,
+        "Matemática": 80.0,
+        "Ciências": 96.0,
+        "Geografia": 98.0,
+        "História": 77.1,
+        "Religião": 77.0
+      },
+      "media_geral": 84.9,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ISADORA ROCHA CRUZ",
+      "data_nascimento": "10/07/2012",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 83.5,
+        "Arte": 75.0,
+        "Filosofia": 81.0,
+        "Inglês": 86.5,
+        "Matemática": 78.5,
+        "Ciências": 97.5,
+        "Geografia": 96.0,
+        "História": 77.3,
+        "Religião": 82.0
+      },
+      "media_geral": 84.14,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JAKSON DE OLIVEIRA SOUZA",
+      "data_nascimento": "05/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 50.0,
+        "Filosofia": 69.0,
+        "Inglês": 50.0,
+        "Matemática": 50.0,
+        "Ciências": 57.0,
+        "Geografia": 50.0,
+        "História": 53.0,
+        "Religião": 50.0
+      },
+      "media_geral": 53.22,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JENNIFER SABRINE DA SILVA SERRANO",
+      "data_nascimento": "05/11/2011",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 86.0,
+        "Arte": 71.0,
+        "Filosofia": 69.0,
+        "Inglês": 87.5,
+        "Matemática": 76.5,
+        "Ciências": 83.5,
+        "Geografia": 81.5,
+        "História": 56.4,
+        "Religião": 81.0
+      },
+      "media_geral": 76.93,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JOÃO GABRIEL SILVA DE CASTRO",
+      "data_nascimento": "28/11/2012",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 56.6,
+        "Arte": 71.5,
+        "Filosofia": 72.0,
+        "Inglês": 56.4,
+        "Matemática": 72.0,
+        "Ciências": 76.5,
+        "Geografia": 71.4,
+        "História": 74.1,
+        "Religião": 70.2
+      },
+      "media_geral": 68.97,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JULIA DE SOUZA LEBARCH",
+      "data_nascimento": "12/05/2014",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 62.5,
+        "Arte": 81.0,
+        "Filosofia": 72.0,
+        "Inglês": 71.1,
+        "Matemática": 50.0,
+        "Ciências": 76.0,
+        "Geografia": 79.0,
+        "História": 53.0,
+        "Religião": 75.0
+      },
+      "media_geral": 68.84,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KETLHYN LAYSLA PEREIRA DOMINGOS",
+      "data_nascimento": "29/10/2012",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "CANCELADO"
+    },
+    {
+      "nome": "KEWVYN COSTA MOREIRA",
+      "data_nascimento": "29/01/2014",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 49.0,
+        "Arte": 51.0,
+        "Filosofia": 71.0,
+        "Inglês": 51.9,
+        "Matemática": 45.5,
+        "Ciências": 56.0,
+        "Geografia": 60.3,
+        "História": 50.0,
+        "Religião": 65.0
+      },
+      "media_geral": 55.52,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "LAIS DE JESUS BARBOSA",
+      "data_nascimento": "01/12/2013",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 79.0,
+        "Arte": 51.0,
+        "Filosofia": 54.0,
+        "Inglês": 52.5,
+        "Matemática": 38.5,
+        "Ciências": 67.5,
+        "Geografia": 52.0,
+        "História": 55.0,
+        "Religião": 50.0
+      },
+      "media_geral": 55.5,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "LUIZ GUSTAVO ARAUJO SANTOS",
+      "data_nascimento": "27/09/2012",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "LUNA DE JESUS DA SILVA ANDRADE",
+      "data_nascimento": "27/10/2014",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 69.5,
+        "Arte": 51.5,
+        "Filosofia": 78.0,
+        "Inglês": 52.5,
+        "Matemática": 43.6,
+        "Ciências": 58.0,
+        "Geografia": 50.5,
+        "História": 50.7,
+        "Religião": 57.8
+      },
+      "media_geral": 56.9,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "MAISA DIAS DE MOURA",
+      "data_nascimento": "23/12/2010",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 16.0,
+        "Arte": 44.0,
+        "Filosofia": 66.0,
+        "Inglês": 28.4,
+        "Matemática": 19.0,
+        "Ciências": 19.0,
+        "Geografia": 13.5,
+        "História": 1.9,
+        "Religião": 52.0
+      },
+      "media_geral": 28.87,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "MATHEUS CARDOSO DE JESUS",
+      "data_nascimento": "23/08/2010",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "REISON CONCEICAO DE SOUZA",
+      "data_nascimento": "16/12/2012",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 39.0,
+        "Arte": 61.0,
+        "Filosofia": 75.0,
+        "Inglês": 53.3,
+        "Matemática": 25.6,
+        "Ciências": 42.0,
+        "Geografia": 42.0,
+        "História": 30.8,
+        "Religião": 65.0
+      },
+      "media_geral": 48.19,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "RENZO LIMA KOCK",
+      "data_nascimento": "11/11/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 50.5,
+        "Arte": 53.0,
+        "Filosofia": 72.0,
+        "Inglês": 52.4,
+        "Matemática": 50.0,
+        "Ciências": 66.0,
+        "Geografia": 81.0,
+        "História": 50.0,
+        "Religião": 70.0
+      },
+      "media_geral": 60.54,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "RUAN GABRIEL OLIVEIRA DE MELO",
+      "data_nascimento": "12/03/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 17.3,
+        "Arte": 39.0,
+        "Filosofia": 17.0,
+        "Inglês": 12.0,
+        "Matemática": 12.0,
+        "Ciências": 18.0,
+        "Geografia": 8.0,
+        "História": 3.5,
+        "Religião": 55.0
+      },
+      "media_geral": 20.2,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "RYAN CARLOS PESSOA OLIVEIRA",
+      "data_nascimento": "17/08/2010",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "TIAGO AFONSO SOUSA DOS SANTOS",
+      "data_nascimento": "18/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 73.0,
+        "Arte": 67.0,
+        "Filosofia": 84.0,
+        "Inglês": 72.5,
+        "Matemática": 80.0,
+        "Ciências": 93.0,
+        "Geografia": 81.5,
+        "História": 69.1,
+        "Religião": 70.0
+      },
+      "media_geral": 76.68,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "VALKNER MOISES DA SILVA",
+      "data_nascimento": "10/04/2012",
+      "sexo": "M",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "YASMIN PEREIRA RIBEIRO",
+      "data_nascimento": "06/10/2011",
+      "sexo": "F",
+      "turma": "6º ANO E",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 50.5,
+        "Arte": 57.0,
+        "Filosofia": 54.0,
+        "Inglês": 53.0,
+        "Matemática": 92.0,
+        "Ciências": 66.5,
+        "Geografia": 67.5,
+        "História": 50.0,
+        "Religião": 70.0
+      },
+      "media_geral": 62.28,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ANA CAROLINA CORREA DA SILVA",
+      "data_nascimento": "13/07/2013",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 29.5,
+        "Arte": 40.0,
+        "Filosofia": 45.0,
+        "Inglês": 11.0,
+        "Matemática": 15.0,
+        "Ciências": 16.5,
+        "Geografia": 15.0,
+        "História": 16.7,
+        "Religião": 33.0
+      },
+      "media_geral": 24.63,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ANA HILLARY OLIVEIRA DE SOUZA",
+      "data_nascimento": "02/07/2013",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 64.3,
+        "Arte": 63.0,
+        "Filosofia": 69.0,
+        "Inglês": 50.0,
+        "Matemática": 61.8,
+        "Ciências": 51.5,
+        "Geografia": 51.5,
+        "História": 50.0,
+        "Religião": 52.0
+      },
+      "media_geral": 57.01,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "ÂNGELO RIACHO SPEROTTO",
+      "data_nascimento": "09/03/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 54.0,
+        "Arte": 50.0,
+        "Filosofia": 36.0,
+        "Inglês": 0.0,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 50.0,
+        "História": 50.0,
+        "Religião": 50.0
+      },
+      "media_geral": 43.33,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "CARLOS AFONSO ALVES LEITE",
+      "data_nascimento": "21/04/2011",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "DANIEL ALVES BRITO",
+      "data_nascimento": "17/03/2014",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 32.5,
+        "Arte": 42.5,
+        "Filosofia": 75.0,
+        "Inglês": 31.7,
+        "Matemática": 16.5,
+        "Ciências": 37.0,
+        "Geografia": 21.8,
+        "História": 17.0,
+        "Religião": 48.0
+      },
+      "media_geral": 35.78,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "DAVI ALVES BRITO",
+      "data_nascimento": "17/03/2014",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 29.8,
+        "Arte": 41.5,
+        "Filosofia": 70.0,
+        "Inglês": 34.0,
+        "Matemática": 11.3,
+        "Ciências": 28.0,
+        "Geografia": 21.8,
+        "História": 16.0,
+        "Religião": 48.0
+      },
+      "media_geral": 33.38,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "DAVI DE JESUS OLIVEIRA",
+      "data_nascimento": "11/11/2009",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "DAVI LUCAS ESPERANCA SALVADOR",
+      "data_nascimento": "15/10/2011",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 22.0,
+        "Arte": 50.0,
+        "Filosofia": 73.0,
+        "Inglês": 50.8,
+        "Matemática": 44.5,
+        "Ciências": 40.5,
+        "Geografia": 36.0,
+        "História": 27.0,
+        "Religião": 54.0
+      },
+      "media_geral": 44.2,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "DIENIFER DIAS FARIAS",
+      "data_nascimento": "11/04/2011",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "GLEICIANE FERREIRA DOS SANTOS",
+      "data_nascimento": "17/05/2013",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 33.3,
+        "Arte": 66.0,
+        "Filosofia": 69.0,
+        "Inglês": 50.5,
+        "Matemática": 29.0,
+        "Ciências": 44.5,
+        "Geografia": 39.3,
+        "História": 31.0,
+        "Religião": 56.0
+      },
+      "media_geral": 46.51,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "GUILHERME PEREIRA CASTRO",
+      "data_nascimento": "07/12/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 84.2,
+        "Arte": 80.0,
+        "Filosofia": 84.0,
+        "Inglês": 90.0,
+        "Matemática": 94.5,
+        "Ciências": 94.0,
+        "Geografia": 95.0,
+        "História": 93.0,
+        "Religião": 72.0
+      },
+      "media_geral": 87.41,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "GUSTAVO JOSE DA SILVA",
+      "data_nascimento": "11/11/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 88.5,
+        "Arte": 81.5,
+        "Filosofia": 82.0,
+        "Inglês": 85.5,
+        "Matemática": 96.5,
+        "Ciências": 95.0,
+        "Geografia": 97.5,
+        "História": 88.5,
+        "Religião": 77.0
+      },
+      "media_geral": 88.0,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "HEITOR NOGUEIRA",
+      "data_nascimento": "24/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 80.0,
+        "Arte": 71.5,
+        "Filosofia": 84.0,
+        "Inglês": 72.8,
+        "Matemática": 82.5,
+        "Ciências": 77.0,
+        "Geografia": 78.5,
+        "História": 67.5,
+        "Religião": 65.0
+      },
+      "media_geral": 75.42,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "IKARO DOS SANTOS OLIVEIRA",
+      "data_nascimento": "09/01/2014",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 50.5,
+        "Arte": 56.0,
+        "Filosofia": 57.0,
+        "Inglês": 65.8,
+        "Matemática": 88.0,
+        "Ciências": 77.5,
+        "Geografia": 85.0,
+        "História": 57.2,
+        "Religião": 70.0
+      },
+      "media_geral": 67.44,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "ISABELLA PEREIRA DE JESUS",
+      "data_nascimento": "02/11/2013",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 78.5,
+        "Arte": 73.0,
+        "Filosofia": 82.0,
+        "Inglês": 57.8,
+        "Matemática": 86.5,
+        "Ciências": 92.5,
+        "Geografia": 94.0,
+        "História": 78.5,
+        "Religião": 74.0
+      },
+      "media_geral": 79.64,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JENIFFER PAIXÃO PEREIRA",
+      "data_nascimento": "02/09/2013",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 95.0,
+        "Arte": 78.0,
+        "Filosofia": 82.0,
+        "Inglês": 73.1,
+        "Matemática": 92.5,
+        "Ciências": 95.0,
+        "Geografia": 98.0,
+        "História": 94.0,
+        "Religião": 69.0
+      },
+      "media_geral": 86.29,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JOSHUA GABRIEL FERNANDES KOCK DOS\nSANTOS",
+      "data_nascimento": "15/09/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 90.0,
+        "Arte": 84.0,
+        "Filosofia": 72.0,
+        "Inglês": 87.8,
+        "Matemática": 87.0,
+        "Ciências": 100.0,
+        "Geografia": 98.0,
+        "História": 81.5,
+        "Religião": 76.0
+      },
+      "media_geral": 86.26,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KAICK GONCALVES FERREIRA",
+      "data_nascimento": "02/02/2014",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 85.5,
+        "Arte": 62.0,
+        "Filosofia": 84.0,
+        "Inglês": 87.0,
+        "Matemática": 85.5,
+        "Ciências": 81.0,
+        "Geografia": 96.5,
+        "História": 71.0,
+        "Religião": 68.0
+      },
+      "media_geral": 80.06,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KAIO DE SOUZA ALEXANDRINO",
+      "data_nascimento": "28/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 47.5,
+        "Arte": 53.5,
+        "Filosofia": 72.0,
+        "Inglês": 52.5,
+        "Matemática": 50.0,
+        "Ciências": 49.8,
+        "Geografia": 26.0,
+        "História": 13.8,
+        "Religião": 44.0
+      },
+      "media_geral": 45.46,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "KASSIA DOS SANTOS DE OLIVEIRA",
+      "data_nascimento": "20/05/2013",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 75.7,
+        "Arte": 66.0,
+        "Filosofia": 72.0,
+        "Inglês": 60.5,
+        "Matemática": 58.5,
+        "Ciências": 62.5,
+        "Geografia": 57.5,
+        "História": 50.0,
+        "Religião": 61.0
+      },
+      "media_geral": 62.63,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KAUA PEREIRA SANTANA",
+      "data_nascimento": "07/03/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 47.8,
+        "Arte": 50.0,
+        "Filosofia": 71.0,
+        "Inglês": 51.0,
+        "Matemática": 44.5,
+        "Ciências": 52.5,
+        "Geografia": 50.5,
+        "História": 29.9,
+        "Religião": 65.0
+      },
+      "media_geral": 51.36,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "MARCIO DAVI ALVES MARES",
+      "data_nascimento": "07/03/2014",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 70.5,
+        "Filosofia": 71.0,
+        "Inglês": 53.0,
+        "Matemática": 39.0,
+        "Ciências": 50.5,
+        "Geografia": 51.5,
+        "História": 50.0,
+        "Religião": 63.0
+      },
+      "media_geral": 55.39,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "MARCOS ANTONIO BASTO REAL",
+      "data_nascimento": "27/10/2011",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 52.5,
+        "Arte": 52.0,
+        "Filosofia": 69.0,
+        "Inglês": 50.5,
+        "Matemática": 52.0,
+        "Ciências": 57.5,
+        "Geografia": 50.5,
+        "História": 56.0,
+        "Religião": 65.0
+      },
+      "media_geral": 56.11,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "MARIA LUIZA DE BRITO CONCEICAO",
+      "data_nascimento": "02/11/2008",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "RAYKA DE JESUS DA SILVA",
+      "data_nascimento": "30/05/2008",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 37.0,
+        "Arte": 50.0,
+        "Filosofia": 70.0,
+        "Inglês": 53.5,
+        "Matemática": 38.0,
+        "Ciências": 38.0,
+        "Geografia": 40.0,
+        "História": 34.5,
+        "Religião": 67.0
+      },
+      "media_geral": 47.56,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "RAYLLA DE JESUS SANTANA",
+      "data_nascimento": "13/08/2013",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 71.5,
+        "Arte": 60.0,
+        "Filosofia": 73.0,
+        "Inglês": 56.0,
+        "Matemática": 50.5,
+        "Ciências": 51.5,
+        "Geografia": 50.0,
+        "História": 50.0,
+        "Religião": 67.0
+      },
+      "media_geral": 58.83,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "SAMUEL ROCHA GOMES",
+      "data_nascimento": "07/04/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 34.5,
+        "Arte": 51.5,
+        "Filosofia": 76.0,
+        "Inglês": 50.5,
+        "Matemática": 31.0,
+        "Ciências": 39.0,
+        "Geografia": 23.5,
+        "História": 17.8,
+        "Religião": 55.0
+      },
+      "media_geral": 42.09,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "TALYSON PEREIRA",
+      "data_nascimento": "03/01/2014",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 53.0,
+        "Filosofia": 74.0,
+        "Inglês": 51.0,
+        "Matemática": 52.0,
+        "Ciências": 50.5,
+        "Geografia": 50.5,
+        "História": 24.0,
+        "Religião": 68.0
+      },
+      "media_geral": 52.56,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "TAMIRES SANTOS DE ALMEIDA",
+      "data_nascimento": "29/05/2011",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 78.5,
+        "Arte": 77.0,
+        "Filosofia": 81.0,
+        "Inglês": 81.0,
+        "Matemática": 94.0,
+        "Ciências": 85.5,
+        "Geografia": 77.5,
+        "História": 78.5,
+        "Religião": 68.0
+      },
+      "media_geral": 80.11,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "TIAGO FARIA DE SOUZA",
+      "data_nascimento": "09/08/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 30.0,
+        "Arte": 50.0,
+        "Filosofia": 72.0,
+        "Inglês": 50.0,
+        "Matemática": 41.0,
+        "Ciências": 38.5,
+        "Geografia": 25.0,
+        "História": 25.3,
+        "Religião": 64.0
+      },
+      "media_geral": 43.98,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "VINICIUS ARIFA SAMPAIO",
+      "data_nascimento": "22/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 95.5,
+        "Arte": 92.0,
+        "Filosofia": 69.0,
+        "Inglês": 92.5,
+        "Matemática": 98.5,
+        "Ciências": 100.0,
+        "Geografia": 87.0,
+        "História": 98.0,
+        "Religião": 74.0
+      },
+      "media_geral": 89.61,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "WIRIS TOME FELIS",
+      "data_nascimento": "05/01/2011",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 41.5,
+        "Arte": 50.0,
+        "Filosofia": 69.0,
+        "Inglês": 50.0,
+        "Matemática": 36.0,
+        "Ciências": 42.5,
+        "Geografia": 28.0,
+        "História": 25.0,
+        "Religião": 55.0
+      },
+      "media_geral": 44.11,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "YAGO PEREIRA RIBEIRO",
+      "data_nascimento": "06/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 23.0,
+        "Arte": 50.0,
+        "Filosofia": 69.0,
+        "Inglês": 32.3,
+        "Matemática": 40.5,
+        "Ciências": 23.0,
+        "Geografia": 16.5,
+        "História": 17.5,
+        "Religião": 54.0
+      },
+      "media_geral": 36.2,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "YASMIN DE JESUS OLIVEIRA",
+      "data_nascimento": "12/02/2013",
+      "sexo": "F",
+      "turma": "6º ANO F",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "ANA BEATRIZ CARDOSO MACHADO",
+      "data_nascimento": "24/05/2010",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "ANDERSON KAIO LIMA LINHARES",
+      "data_nascimento": "03/05/2011",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "ANDRESSA CARDOSO DA SILVA",
+      "data_nascimento": "10/06/2012",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "ANDRESSA CARDOSO DA SILVA",
+      "data_nascimento": "10/06/2012",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "ANDRICK BARBOSA DE JESUS",
+      "data_nascimento": "19/06/2011",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 45.2,
+        "Arte": 63.0,
+        "Filosofia": 87.0,
+        "Inglês": 54.0,
+        "Matemática": 60.0,
+        "Ciências": 38.5,
+        "Geografia": 46.5,
+        "História": 37.5,
+        "Religião": 51.0
+      },
+      "media_geral": 53.63,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "ANNA BEATRIZ DE SOUZA SOARES",
+      "data_nascimento": "08/08/2013",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 70.1,
+        "Arte": 82.0,
+        "Filosofia": 65.0,
+        "Inglês": 73.0,
+        "Matemática": 79.0,
+        "Ciências": 77.0,
+        "Geografia": 80.5,
+        "História": 64.8,
+        "Religião": 20.0
+      },
+      "media_geral": 67.93,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "CHARLLES RODRIGUES PORTO DE\nQUEIROZ",
+      "data_nascimento": "23/07/2012",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 36.0,
+        "Arte": 51.0,
+        "Filosofia": 85.0,
+        "Inglês": 36.5,
+        "Matemática": 25.0,
+        "Ciências": 47.5,
+        "Geografia": 42.0,
+        "História": 19.6,
+        "Religião": 60.0
+      },
+      "media_geral": 44.73,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "DAVID LINDEMBERG RIBEIRO DE\nOLIVEIRA",
+      "data_nascimento": "20/04/2013",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "EDGAR TAVARES BONFIM",
+      "data_nascimento": "04/03/2012",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 30.0,
+        "Arte": 25.0,
+        "Filosofia": 40.0,
+        "Inglês": 26.0,
+        "Matemática": 8.0,
+        "Ciências": 15.5,
+        "Geografia": 8.0,
+        "História": 9.5,
+        "Religião": 64.5
+      },
+      "media_geral": 25.17,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "EDYSLAN SOUZA ARAUJO",
+      "data_nascimento": "16/06/2011",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "ENZO SOUZA SOARES",
+      "data_nascimento": "27/06/2011",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 81.5,
+        "Arte": 71.6,
+        "Filosofia": 77.0,
+        "Inglês": 70.2,
+        "Matemática": 78.0,
+        "Ciências": 82.0,
+        "Geografia": 83.0,
+        "História": 78.0,
+        "Religião": 56.0
+      },
+      "media_geral": 75.26,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "EVELIN APARECIDA CARDOSO SILVA",
+      "data_nascimento": "05/06/2013",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 54.5,
+        "Arte": 59.0,
+        "Filosofia": 55.0,
+        "Inglês": 50.0,
+        "Matemática": 50.0,
+        "Ciências": 50.0,
+        "Geografia": 61.5,
+        "História": 50.5,
+        "Religião": 67.0
+      },
+      "media_geral": 55.28,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "EVELYN RAMOS DA SILVA",
+      "data_nascimento": "19/04/2010",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "ITAMARA DOS REIS VITORIA",
+      "data_nascimento": "07/11/2011",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "JEFERSON DIAS DOS SANTOS",
+      "data_nascimento": "17/01/2014",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 55.3,
+        "Arte": 57.5,
+        "Filosofia": 75.0,
+        "Inglês": 50.0,
+        "Matemática": 64.0,
+        "Ciências": 76.5,
+        "Geografia": 69.5,
+        "História": 50.3,
+        "Religião": 66.0
+      },
+      "media_geral": 62.68,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "JEFERSON FELICINA GAMA",
+      "data_nascimento": "22/03/2013",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 8.5,
+        "Arte": 0.0,
+        "Filosofia": 45.0,
+        "Inglês": 0.0,
+        "Matemática": 5.5,
+        "Ciências": 3.0,
+        "Geografia": 2.0,
+        "História": 0.0,
+        "Religião": 0.0
+      },
+      "media_geral": 7.11,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "JOAO GABRIEL GONCALVES BRITO",
+      "data_nascimento": "22/08/2011",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 54.0,
+        "Arte": 50.0,
+        "Filosofia": 70.0,
+        "Inglês": 52.0,
+        "Matemática": 52.0,
+        "Ciências": 51.0,
+        "Geografia": 50.0,
+        "História": 50.0,
+        "Religião": 51.0
+      },
+      "media_geral": 53.33,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KAIQUE MESCLA DOS SANTOS",
+      "data_nascimento": "16/07/2011",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 33.5,
+        "Arte": 50.0,
+        "Filosofia": 90.0,
+        "Inglês": 38.0,
+        "Matemática": 24.0,
+        "Ciências": 16.5,
+        "Geografia": 15.0,
+        "História": 16.5,
+        "Religião": 59.0
+      },
+      "media_geral": 38.06,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "KATHERINY CECILIA DA SILVA CARVALHO",
+      "data_nascimento": "31/12/2013",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 81.5,
+        "Arte": 75.5,
+        "Filosofia": 65.0,
+        "Inglês": 71.5,
+        "Matemática": 77.5,
+        "Ciências": 61.0,
+        "Geografia": 82.0,
+        "História": 62.8,
+        "Religião": 61.0
+      },
+      "media_geral": 70.87,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "KAUANE MESCLA SANTOS",
+      "data_nascimento": "22/04/2013",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 43.2,
+        "Arte": 54.0,
+        "Filosofia": 65.0,
+        "Inglês": 50.3,
+        "Matemática": 44.0,
+        "Ciências": 31.0,
+        "Geografia": 29.5,
+        "História": 16.7,
+        "Religião": 61.0
+      },
+      "media_geral": 43.86,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "KAYLANI CORDEIRO JORGE",
+      "data_nascimento": "19/05/2013",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 51.0,
+        "Filosofia": 70.0,
+        "Inglês": 50.5,
+        "Matemática": 50.0,
+        "Ciências": 32.0,
+        "Geografia": 50.0,
+        "História": 50.0,
+        "Religião": 57.0
+      },
+      "media_geral": 51.17,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "KIARA THAYLA PINHO SENA",
+      "data_nascimento": "24/06/2013",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 53.2,
+        "Arte": 50.0,
+        "Filosofia": 75.0,
+        "Inglês": 50.0,
+        "Matemática": 50.0,
+        "Ciências": 55.0,
+        "Geografia": 53.5,
+        "História": 54.1,
+        "Religião": 70.0
+      },
+      "media_geral": 56.76,
+      "resultado_final": "APCC"
+    },
+    {
+      "nome": "LARISSA CLARA TAVARES GONCALVES",
+      "data_nascimento": "15/08/2013",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 80.0,
+        "Arte": 62.0,
+        "Filosofia": 65.0,
+        "Inglês": 64.0,
+        "Matemática": 85.0,
+        "Ciências": 81.5,
+        "Geografia": 69.0,
+        "História": 55.5,
+        "Religião": 71.0
+      },
+      "media_geral": 70.33,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "LAYSSA NASCIMENTO DOS SANTOS",
+      "data_nascimento": "07/03/2012",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 60.5,
+        "Arte": 50.0,
+        "Filosofia": 60.0,
+        "Inglês": 66.9,
+        "Matemática": 50.0,
+        "Ciências": 56.0,
+        "Geografia": 54.5,
+        "História": 52.0,
+        "Religião": 74.0
+      },
+      "media_geral": 58.21,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "LUIS HENRIQUE GOES DOS SANTOS",
+      "data_nascimento": "14/07/2013",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 27.5,
+        "Arte": 51.0,
+        "Filosofia": 80.0,
+        "Inglês": 50.0,
+        "Matemática": 33.5,
+        "Ciências": 21.5,
+        "Geografia": 16.5,
+        "História": 26.1,
+        "Religião": 61.0
+      },
+      "media_geral": 40.79,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "MARCIO JUNIOR FELIX DOS SANTOS\nSOUZA",
+      "data_nascimento": "21/02/2011",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "DESISTENTE"
+    },
+    {
+      "nome": "MARJORIE RESENDE SANTIAGO DE\nSOUZA",
+      "data_nascimento": "06/02/2014",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 66.5,
+        "Arte": 76.0,
+        "Filosofia": 61.0,
+        "Inglês": 71.5,
+        "Matemática": 82.0,
+        "Ciências": 83.5,
+        "Geografia": 75.5,
+        "História": 55.8,
+        "Religião": 74.0
+      },
+      "media_geral": 71.76,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "MATEUS LAURENTINO COSTA",
+      "data_nascimento": "27/09/2012",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 27.5,
+        "Arte": 40.0,
+        "Filosofia": 72.0,
+        "Inglês": 36.5,
+        "Matemática": 33.5,
+        "Ciências": 26.5,
+        "Geografia": 28.5,
+        "História": 21.2,
+        "Religião": 63.0
+      },
+      "media_geral": 38.74,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "NAUAN DE SOUZA LIMA",
+      "data_nascimento": "03/02/2012",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "PIETRO JESUS DE SA",
+      "data_nascimento": "28/02/2013",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 30.8,
+        "Arte": 54.0,
+        "Filosofia": 80.0,
+        "Inglês": 44.5,
+        "Matemática": 35.0,
+        "Ciências": 30.8,
+        "Geografia": 32.0,
+        "História": 25.2,
+        "Religião": 60.0
+      },
+      "media_geral": 43.59,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "RENAN VIEIRA ALTINO",
+      "data_nascimento": "25/03/2012",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 52.4,
+        "Arte": 66.0,
+        "Filosofia": 78.0,
+        "Inglês": 51.5,
+        "Matemática": 58.5,
+        "Ciências": 66.5,
+        "Geografia": 55.0,
+        "História": 50.0,
+        "Religião": 68.0
+      },
+      "media_geral": 60.66,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "THALIS CONCEICAO DOS SANTOS",
+      "data_nascimento": "06/11/2013",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 26.5,
+        "Arte": 48.5,
+        "Filosofia": 79.0,
+        "Inglês": 35.5,
+        "Matemática": 34.5,
+        "Ciências": 24.0,
+        "Geografia": 13.5,
+        "História": 30.9,
+        "Religião": 38.0
+      },
+      "media_geral": 36.71,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "THAMIRES ALVES DE OLIVEIRA",
+      "data_nascimento": "26/08/2010",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {},
+      "media_geral": null,
+      "resultado_final": "TRANSFERIDO"
+    },
+    {
+      "nome": "THAYNA DIAS DOS SANTOS",
+      "data_nascimento": "30/09/2011",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 39.7,
+        "Arte": 42.5,
+        "Filosofia": 65.0,
+        "Inglês": 41.0,
+        "Matemática": 26.5,
+        "Ciências": 25.0,
+        "Geografia": 25.5,
+        "História": 40.1,
+        "Religião": 55.5
+      },
+      "media_geral": 40.09,
+      "resultado_final": "REPROVADO"
+    },
+    {
+      "nome": "THAYSLAINE MARTINS SANTOS",
+      "data_nascimento": "19/11/2013",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 77.3,
+        "Arte": 64.5,
+        "Filosofia": 55.0,
+        "Inglês": 63.5,
+        "Matemática": 73.0,
+        "Ciências": 82.5,
+        "Geografia": 65.0,
+        "História": 61.5,
+        "Religião": 72.5
+      },
+      "media_geral": 68.31,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "THAYSLAINE MARTINS SANTOS",
+      "data_nascimento": "19/11/2013",
+      "sexo": "F",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 77.3,
+        "Arte": 64.5,
+        "Filosofia": 55.0,
+        "Inglês": 63.5,
+        "Matemática": 73.0,
+        "Ciências": 82.5,
+        "Geografia": 65.0,
+        "História": 61.5,
+        "Religião": 72.5
+      },
+      "media_geral": 68.31,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "VICTOR PEREIRA DE JESUS ROCHA",
+      "data_nascimento": "31/03/2014",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 50.0,
+        "Arte": 54.5,
+        "Filosofia": 66.0,
+        "Inglês": 53.0,
+        "Matemática": 50.0,
+        "Ciências": 52.0,
+        "Geografia": 50.0,
+        "História": 50.0,
+        "Religião": 55.0
+      },
+      "media_geral": 53.39,
+      "resultado_final": "APROVADO"
+    },
+    {
+      "nome": "YTALO SAMUEL DIAS SALVINO",
+      "data_nascimento": "07/06/2013",
+      "sexo": "M",
+      "turma": "6º ANO G",
+      "turno": "VESPERTINO",
+      "notas": {
+        "Português": 63.5,
+        "Arte": 64.0,
+        "Filosofia": 76.0,
+        "Inglês": 66.0,
+        "Matemática": 82.5,
+        "Ciências": 69.0,
+        "Geografia": 72.0,
+        "História": 50.5,
+        "Religião": 50.0
+      },
+      "media_geral": 65.94,
+      "resultado_final": "APROVADO"
+    }
+  ]
+}
