@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -59,14 +60,17 @@ export default function Dashboard({ initialData }: DashboardProps) {
       {/* Sidebar */}
       <aside className="w-64 bg-card border-r border-border flex flex-col">
         <div className="p-6 border-b border-border">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <School className="w-6 h-6 text-primary-foreground" />
+          <div className="flex flex-col items-center gap-2">
+            <div className="relative w-full h-20">
+              <Image
+                src="/logo.png"
+                alt="Colégio Frei Ronaldo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
-            <div>
-              <h1 className="font-bold text-lg">Dashboard Escolar</h1>
-              <p className="text-xs text-muted-foreground">6º Ano Fundamental</p>
-            </div>
+            <p className="text-xs text-muted-foreground font-medium">Painel de Gestão</p>
           </div>
         </div>
 
@@ -109,10 +113,10 @@ export default function Dashboard({ initialData }: DashboardProps) {
 
         {/* Content */}
         <div className="flex-1 p-6 overflow-y-auto">
-          {activeMenu === 'overview' && <Overview data={data} onMenuChange={setActiveMenu} />}
-          {activeMenu === 'turma' && <TurmaAnalysis data={data} onMenuChange={setActiveMenu} />}
-          {activeMenu === 'reports' && <Reports data={data} onMenuChange={setActiveMenu} />}
-          {activeMenu === 'students' && <StudentsList data={data} onMenuChange={setActiveMenu} />}
+          {activeMenu === 'overview' && <Overview data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
+          {activeMenu === 'turma' && <TurmaAnalysis data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
+          {activeMenu === 'reports' && <Reports data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
+          {activeMenu === 'students' && <StudentsList data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
         </div>
       </main>
     </div>
