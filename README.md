@@ -9,6 +9,9 @@
 ### 📊 Painéis de Análise (Analytics)
 - **Visão Geral da Escola**: Métricas consolidadas de desempenho, aprovação e frequência.
 - **Análise por Turma**: Comparativo de desempenho entre turmas e disciplinas.
+- **Risco Acadêmico**: Painel de identificação de alunos prioritários com filtros de gravidade (exclui transferidos/cancelados).
+- **Comparativo de Turmas (Battle Mode)**: Gráficos de radar e diferencial para confrontar duas turmas lado a lado.
+- **Ranking de Disciplinas**: Leaderboard das turmas com melhor desempenho por matéria.
 - **Perfil do Aluno**: Histórico detalhado, notas, frequência e observações pedagógicas.
 
 ### 🤖 Inteligência Artificial (AI Powered)

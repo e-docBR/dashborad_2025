@@ -6,30 +6,31 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { 
-  Download, 
+import {
+  Download,
   Filter,
-  Users, 
-  CheckCircle, 
-  XCircle, 
+  Users,
+  CheckCircle,
+  XCircle,
   AlertCircle,
   ArrowRightLeft,
   LogOut,
   MinusCircle
 } from 'lucide-react'
-import { 
-  BarChart, 
-  Bar, 
-  XAxis, 
-  YAxis, 
-  CartesianGrid, 
-  Tooltip, 
-  Legend, 
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
   ResponsiveContainer,
   PieChart,
   Pie,
   Cell
 } from 'recharts'
+import SubjectRanking from '@/components/SubjectRanking'
 
 interface ClassStats {
   total_alunos: number
@@ -270,17 +271,17 @@ export default function Reports({ data, onMenuChange }: ReportsProps) {
               <div className="p-4 rounded-lg border">
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-muted-foreground">Taxa de Aprovação</span>
-                  <Badge 
+                  <Badge
                     variant={((aprovadosFiltrado / totalFiltrado) * 100) >= 60 ? 'default' : 'destructive'}
                   >
                     {totalFiltrado > 0 ? ((aprovadosFiltrado / totalFiltrado) * 100).toFixed(1) : 0}%
                   </Badge>
                 </div>
                 <div className="w-full bg-secondary rounded-full h-3 mt-2">
-                  <div 
+                  <div
                     className="bg-green-500 h-3 rounded-full transition-all"
-                    style={{ 
-                      width: `${totalFiltrado > 0 ? (aprovadosFiltrado / totalFiltrado) * 100 : 0}%` 
+                    style={{
+                      width: `${totalFiltrado > 0 ? (aprovadosFiltrado / totalFiltrado) * 100 : 0}%`
                     }}
                   />
                 </div>
@@ -294,10 +295,10 @@ export default function Reports({ data, onMenuChange }: ReportsProps) {
                   </Badge>
                 </div>
                 <div className="w-full bg-secondary rounded-full h-3 mt-2">
-                  <div 
+                  <div
                     className="bg-red-500 h-3 rounded-full transition-all"
-                    style={{ 
-                      width: `${totalFiltrado > 0 ? (reprovadosFiltrado / totalFiltrado) * 100 : 0}%` 
+                    style={{
+                      width: `${totalFiltrado > 0 ? (reprovadosFiltrado / totalFiltrado) * 100 : 0}%`
                     }}
                   />
                 </div>
@@ -311,10 +312,10 @@ export default function Reports({ data, onMenuChange }: ReportsProps) {
                   </Badge>
                 </div>
                 <div className="w-full bg-secondary rounded-full h-3 mt-2">
-                  <div 
+                  <div
                     className="bg-yellow-500 h-3 rounded-full transition-all"
-                    style={{ 
-                      width: `${totalFiltrado > 0 ? (apccFiltrado / totalFiltrado) * 100 : 0}%` 
+                    style={{
+                      width: `${totalFiltrado > 0 ? (apccFiltrado / totalFiltrado) * 100 : 0}%`
                     }}
                   />
                 </div>
@@ -349,6 +350,9 @@ export default function Reports({ data, onMenuChange }: ReportsProps) {
           </ResponsiveContainer>
         </CardContent>
       </Card>
+
+      {/* Ranking de Turmas por Disciplina */}
+      <SubjectRanking data={data} />
 
       {/* Tabela Detalhada por Turma */}
       <Card>
@@ -425,7 +429,7 @@ export default function Reports({ data, onMenuChange }: ReportsProps) {
                 <p className="font-medium text-green-800 dark:text-green-200">Desempenho Geral</p>
                 <p className="text-sm text-green-700 dark:text-green-300">
                   A taxa de aprovação é de {totalFiltrado > 0 ? ((aprovadosFiltrado / totalFiltrado) * 100).toFixed(1) : 0}%.
-                  {totalFiltrado > 0 && ((aprovadosFiltrado / totalFiltrado) * 100) >= 60 
+                  {totalFiltrado > 0 && ((aprovadosFiltrado / totalFiltrado) * 100) >= 60
                     ? ' Este valor está acima da meta de 60%.'
                     : ' Este valor está abaixo da meta de 60%.'}
                 </p>

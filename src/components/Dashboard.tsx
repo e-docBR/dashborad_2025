@@ -10,14 +10,18 @@ import {
   FileText,
   Users,
   School,
-  LogOut
+  LogOut,
+  AlertTriangle,
+  ArrowRightLeft
 } from 'lucide-react'
 import Overview from '@/components/Overview'
 import TurmaAnalysis from '@/components/TurmaAnalysis'
 import Reports from '@/components/Reports'
 import StudentsList from '@/components/StudentsList'
+import RiskAnalysis from '@/components/RiskAnalysis'
+import ComparativeAnalysis from '@/components/ComparativeAnalysis'
 
-type MenuType = 'overview' | 'turma' | 'reports' | 'students'
+type MenuType = 'overview' | 'turma' | 'reports' | 'students' | 'risk' | 'comparative'
 
 interface DashboardData {
   resumo_geral: {
@@ -51,6 +55,8 @@ export default function Dashboard({ initialData }: DashboardProps) {
   const menuItems = [
     { id: 'overview' as MenuType, label: 'Visão Geral', icon: BarChart3 },
     { id: 'turma' as MenuType, label: 'Análise por Turma', icon: PieChart },
+    { id: 'risk' as MenuType, label: 'Risco Acadêmico', icon: AlertTriangle },
+    { id: 'comparative' as MenuType, label: 'Comparativo', icon: ArrowRightLeft },
     { id: 'reports' as MenuType, label: 'Relatórios Detalhados', icon: FileText },
     { id: 'students' as MenuType, label: 'Lista de Alunos', icon: Users },
   ]
@@ -115,6 +121,8 @@ export default function Dashboard({ initialData }: DashboardProps) {
         <div className="flex-1 p-6 overflow-y-auto">
           {activeMenu === 'overview' && <Overview data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
           {activeMenu === 'turma' && <TurmaAnalysis data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
+          {activeMenu === 'risk' && <RiskAnalysis data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
+          {activeMenu === 'comparative' && <ComparativeAnalysis data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
           {activeMenu === 'reports' && <Reports data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
           {activeMenu === 'students' && <StudentsList data={data} onMenuChange={(m: string) => setActiveMenu(m as MenuType)} />}
         </div>
