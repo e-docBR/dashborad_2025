@@ -16,7 +16,13 @@
 
 ### 🤖 Inteligência Artificial (AI Powered)
 - **Sistema de Alerta Precoce**: Identificação automática de alunos com risco de reprovação ou evasão, baseado em tendências de notas e frequência.
-- **Insights Pedagógicos**: Análise automática de turmas para sugerir estratégias de ensino personalizadas.
+- **Insights Pedagógicos Avançados**: Sistema completo de análise educacional que transforma dados em orientações práticas:
+  - **Análise de Disciplinas**: Classificação em CRÍTICO, ALERTA, ADEQUADO ou EXCELENTE
+  - **Identificação de Alunos em Risco**: Classificação em ALTO, MÉDIO ou BAIXO com recomendações personalizadas
+  - **Análise de Padrões Comportamentais**: Gap de gênero, correlações entre disciplinas e tendências
+  - **Recomendações para Docentes**: Ações específicas por disciplina com priorização
+  - **Intervenções Pedagógicas**: REMEDIAL, ENRIQUECIMENTO, ADAPTAÇÃO e MONITORIA
+  - **Ajustes Curriculares**: Sugestões fundamentadas de modificações curriculares
 - **Assistente de Dados (Chatbot)**: Interface de chat em linguagem natural para consultar dados escolares (ex: "Quais alunos do 9º ano A precisam de reforço em Matemática?").
 
 ### 🛠️ Gestão Escolar
@@ -83,18 +89,57 @@ O projeto foi construído utilizando uma stack moderna e robusta para garantir p
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📊 Sistema de Insights Pedagógicos
+
+O sistema inclui uma ferramenta completa de análise educacional que transforma dados brutos em orientações práticas:
+
+### Como Acessar os Insights Pedagógicos
+
+1. **Via Dashboard Principal**:
+   - Acesse o Dashboard
+   - No menu lateral, clique em "Insights Pedagógicos"
+   - Clique em "Acessar Insights Pedagógicos Completos"
+
+2. **Acesso Direto**:
+   - Navegue para `/pedagogical-insights`
+   - Selecione uma turma no dropdown
+   - Explore as diferentes seções de análise
+
+3. **Via AI Chat**:
+   - No componente de IA Chat, peça: "Faça uma análise pedagógica da turma [nome]"
+   - O sistema gerará insights detalhados automaticamente
+
+### Funcionalidades dos Insights
+
+- **Análise de Disciplinas**: Classificação em CRÍTICO, ALERTA, ADEQUADO ou EXCELENTE
+- **Identificação de Alunos em Risco**: Classificação em ALTO, MÉDIO ou BAIXO com recomendações personalizadas
+- **Análise de Padrões Comportamentais**: Gap de gênero, correlações entre disciplinas e tendências
+- **Recomendações para Docentes**: Ações específicas por disciplina com priorização
+- **Intervenções Pedagógicas**: REMEDIAL, ENRIQUECIMENTO, ADAPTAÇÃO e MONITORIA
+- **Ajustes Curriculares**: Sugestões fundamentadas de modificações curriculares
+
+### Documentação Completa
+
+Para mais detalhes sobre o sistema de Insights Pedagógicos, consulte o documento [`PEDAGOGICAL_INSIGHTS_SYSTEM.md`](PEDAGOGICAL_INSIGHTS_SYSTEM.md).
+
+---
+
+## � Estrutura do Projeto
 
 ```
 src/
 ├── app/                 # Páginas e Rotas (Next.js App Router)
+│   ├── actions/         # Server Actions (ai-chat.ts, ai-insights.ts, pedagogical-insights.ts)
+│   └── pedagogical-insights/  # Página dedicada de insights pedagógicos
 ├── components/          # Componentes React reutilizáveis
 │   ├── ui/              # Componentes base (shadcn/ui)
 │   ├── dashboard/       # Componentes específicos do dashboard
 │   ├── ai/              # Componentes de interface de IA (Chat, Insights)
+│   └── PedagogicalInsights.tsx  # Componente de visualização de insights
 ├── lib/                 # Utilitários e configurações
 │   ├── ai/              # Lógica de integração com IA (Providers, Services)
 │   ├── db.ts            # Cliente Prisma
+│   └── pedagogical-analysis.ts  # Biblioteca de análise pedagógica avançada
 ├── hooks/               # Custom React Hooks
 └── skills/              # Definições de habilidades/competências (se aplicável)
 ```
