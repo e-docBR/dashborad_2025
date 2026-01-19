@@ -361,7 +361,7 @@ export default function Reports({ data, onMenuChange }: ReportsProps) {
           <CardDescription>Detalhamento completo por turma selecionada</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="max-h-[500px] overflow-y-auto">
+          <div className="max-h-[500px] overflow-auto">
             <Table>
               <TableHeader className="sticky top-0 bg-background">
                 <TableRow>

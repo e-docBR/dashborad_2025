@@ -210,7 +210,7 @@ export default function RiskAnalysis({ data }: RiskAnalysisProps) {
                     </div>
                 </CardHeader>
                 <CardContent>
-                    <div className="max-h-[600px] overflow-y-auto border rounded-md">
+                    <div className="max-h-[600px] overflow-auto border rounded-md">
                         <Table>
                             <TableHeader className="sticky top-0 bg-background z-10">
                                 <TableRow>

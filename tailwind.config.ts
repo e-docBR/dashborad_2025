@@ -56,7 +56,40 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+  		// Mobile-first breakpoints
+  		screens: {
+  			'xs': '375px',
+  			'sm': '640px',
+  			'md': '768px',
+  			'lg': '1024px',
+  			'xl': '1280px',
+  			'2xl': '1536px',
+  		},
+  		// Touch-friendly spacing
+  		spacing: {
+  			'18': '4.5rem',
+  			'88': '22rem',
+  			'128': '32rem',
+  		},
+  		// Typography scale for better readability
+  		fontSize: {
+  			'xxs': '0.625rem',
+  			'3xl': '1.875rem',
+  			'4xl': '2.25rem',
+  			'5xl': '3rem',
+  		},
+  		// Minimum touch target sizes
+  		minHeight: {
+  			'11': '2.75rem',
+  			'12': '3rem',
+  			'14': '3.5rem',
+  		},
+  		minWidth: {
+  			'11': '2.75rem',
+  			'12': '3rem',
+  			'14': '3.5rem',
+  		},
   	}
   },
   plugins: [tailwindcssAnimate],

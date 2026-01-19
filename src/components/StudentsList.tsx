@@ -196,25 +196,26 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 md:space-y-6 no-overflow-x">
       {/* Filtros e Busca */}
       <Card>
         <CardHeader>
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
             <div>
-              <CardTitle>Lista de Alunos</CardTitle>
-              <CardDescription>
+              <CardTitle className="text-base md:text-lg">Lista de Alunos</CardTitle>
+              <CardDescription className="text-xs md:text-sm">
                 Mostrando {filteredStudents.length} de {data.alunos.length} alunos
               </CardDescription>
             </div>
-            <Button onClick={handleExport} variant="outline" className="gap-2">
+            <Button onClick={handleExport} variant="outline" className="gap-2 min-h-10 touch-target">
               <Download className="w-4 h-4" />
-              Exportar CSV
+              <span className="hidden sm:inline">Exportar CSV</span>
+              <span className="sm:hidden">CSV</span>
             </Button>
           </div>
         </CardHeader>
         <CardContent>
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             {/* Busca */}
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
@@ -228,11 +229,11 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
             </div>
 
             {/* Filtros */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
               <div>
-                <label className="text-sm font-medium mb-2 block">Turno</label>
+                <label className="text-xs md:text-sm font-medium mb-1 md:mb-2 block">Turno</label>
                 <Select value={selectedTurno} onValueChange={setSelectedTurno}>
-                  <SelectTrigger>
+                  <SelectTrigger className="min-h-10">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
@@ -244,9 +245,9 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
               </div>
 
               <div>
-                <label className="text-sm font-medium mb-2 block">Turma</label>
+                <label className="text-xs md:text-sm font-medium mb-1 md:mb-2 block">Turma</label>
                 <Select value={selectedTurma} onValueChange={setSelectedTurma}>
-                  <SelectTrigger>
+                  <SelectTrigger className="min-h-10">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
@@ -263,9 +264,9 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
               </div>
 
               <div>
-                <label className="text-sm font-medium mb-2 block">Resultado</label>
+                <label className="text-xs md:text-sm font-medium mb-1 md:mb-2 block">Resultado</label>
                 <Select value={selectedResultado} onValueChange={setSelectedResultado}>
-                  <SelectTrigger>
+                  <SelectTrigger className="min-h-10">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
@@ -281,9 +282,9 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
               </div>
 
               <div>
-                <label className="text-sm font-medium mb-2 block">Sexo</label>
+                <label className="text-xs md:text-sm font-medium mb-1 md:mb-2 block">Sexo</label>
                 <Select value={selectedSexo} onValueChange={setSelectedSexo}>
-                  <SelectTrigger>
+                  <SelectTrigger className="min-h-10">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
@@ -306,7 +307,7 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
                 setSelectedSexo('all')
                 setCurrentPage(1)
               }}
-              className="gap-2"
+              className="gap-2 min-h-10 touch-target"
             >
               <Filter className="w-4 h-4" />
               Limpar Filtros
@@ -316,13 +317,13 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
       </Card>
 
       {/* Estatísticas dos Filtros */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
         <Card>
-          <CardContent className="pt-6">
+          <CardContent className="pt-4 md:pt-6">
             <div className="flex items-center gap-2">
-              <User className="w-5 h-5 text-primary" />
+              <User className="w-4 h-4 md:w-5 md:h-5 text-primary" />
               <div>
-                <p className="text-2xl font-bold">{filteredStudents.length}</p>
+                <p className="text-xl md:text-2xl font-bold">{filteredStudents.length}</p>
                 <p className="text-xs text-muted-foreground">Total Filtrado</p>
               </div>
             </div>
@@ -330,11 +331,11 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
         </Card>
 
         <Card>
-          <CardContent className="pt-6">
+          <CardContent className="pt-4 md:pt-6">
             <div className="flex items-center gap-2">
-              <Award className="w-5 h-5 text-green-600" />
+              <Award className="w-4 h-4 md:w-5 md:h-5 text-green-600" />
               <div>
-                <p className="text-2xl font-bold text-green-600">
+                <p className="text-xl md:text-2xl font-bold text-green-600">
                   {filteredStudents.filter(s => s.resultado_final === 'APROVADO').length}
                 </p>
                 <p className="text-xs text-muted-foreground">Aprovados</p>
@@ -344,11 +345,11 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
         </Card>
 
         <Card>
-          <CardContent className="pt-6">
+          <CardContent className="pt-4 md:pt-6">
             <div className="flex items-center gap-2">
-              <XCircle className="w-5 h-5 text-red-600" />
+              <XCircle className="w-4 h-4 md:w-5 md:h-5 text-red-600" />
               <div>
-                <p className="text-2xl font-bold text-red-600">
+                <p className="text-xl md:text-2xl font-bold text-red-600">
                   {filteredStudents.filter(s => s.resultado_final === 'REPROVADO').length}
                 </p>
                 <p className="text-xs text-muted-foreground">Reprovados</p>
@@ -358,11 +359,11 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
         </Card>
 
         <Card>
-          <CardContent className="pt-6">
+          <CardContent className="pt-4 md:pt-6">
             <div className="flex items-center gap-2">
-              <GraduationCap className="w-5 h-5 text-blue-600" />
+              <GraduationCap className="w-4 h-4 md:w-5 md:h-5 text-blue-600" />
               <div>
-                <p className="text-2xl font-bold">
+                <p className="text-xl md:text-2xl font-bold">
                   {filteredStudents.filter(s => s.media_geral && s.media_geral >= 60).length}
                 </p>
                 <p className="text-xs text-muted-foreground">Média ≥ 60</p>
@@ -375,16 +376,16 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
       {/* Tabela de Alunos */}
       <Card>
         <CardHeader>
-          <CardTitle>Relação de Alunos</CardTitle>
-          <CardDescription>Página {currentPage} de {totalPages}</CardDescription>
+          <CardTitle className="text-base md:text-lg">Relação de Alunos</CardTitle>
+          <CardDescription className="text-xs md:text-sm">Página {currentPage} de {totalPages}</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="max-h-[600px] overflow-y-auto">
+          <div className="max-h-[500px] overflow-auto table-responsive">
             <Table>
               <TableHeader className="sticky top-0 bg-background">
                 <TableRow>
                   <TableHead
-                    className="cursor-pointer hover:bg-muted/50"
+                    className="cursor-pointer hover:bg-muted/50 whitespace-nowrap"
                     onClick={() => handleSort('nome')}
                   >
                     <div className="flex items-center gap-1">
@@ -394,11 +395,11 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
                       )}
                     </div>
                   </TableHead>
-                  <TableHead>Turma</TableHead>
-                  <TableHead>Turno</TableHead>
-                  <TableHead>Sexo</TableHead>
+                  <TableHead className="whitespace-nowrap">Turma</TableHead>
+                  <TableHead className="whitespace-nowrap">Turno</TableHead>
+                  <TableHead className="whitespace-nowrap">Sexo</TableHead>
                   <TableHead
-                    className="cursor-pointer hover:bg-muted/50 text-right"
+                    className="cursor-pointer hover:bg-muted/50 text-right whitespace-nowrap"
                     onClick={() => handleSort('media_geral')}
                   >
                     <div className="flex items-center justify-end gap-1">
@@ -409,7 +410,7 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
                     </div>
                   </TableHead>
                   <TableHead
-                    className="cursor-pointer hover:bg-muted/50"
+                    className="cursor-pointer hover:bg-muted/50 whitespace-nowrap"
                     onClick={() => handleSort('resultado_final')}
                   >
                     <div className="flex items-center gap-1">
@@ -424,17 +425,17 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
               <TableBody>
                 {paginatedStudents.map((student, index) => (
                   <TableRow key={index}>
-                    <TableCell className="font-medium">{student.nome}</TableCell>
-                    <TableCell>{student.turma}</TableCell>
-                    <TableCell>
+                    <TableCell className="font-medium whitespace-nowrap">{student.nome}</TableCell>
+                    <TableCell className="whitespace-nowrap">{student.turma}</TableCell>
+                    <TableCell className="whitespace-nowrap">
                       <Badge variant={student.turno === 'MATUTINO' ? 'default' : 'secondary'}>
                         {student.turno}
                       </Badge>
                     </TableCell>
-                    <TableCell>
+                    <TableCell className="whitespace-nowrap">
                       {student.sexo === 'M' ? 'Masculino' : 'Feminino'}
                     </TableCell>
-                    <TableCell className="text-right">
+                    <TableCell className="text-right whitespace-nowrap">
                       <span className={
                         student.media_geral && student.media_geral >= 60 ? 'text-green-600' :
                           student.media_geral && student.media_geral >= 50 ? 'text-yellow-600' :
@@ -443,7 +444,7 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
                         {student.media_geral ? student.media_geral.toFixed(1) : '--'}
                       </span>
                     </TableCell>
-                    <TableCell>
+                    <TableCell className="whitespace-nowrap">
                       <div className="flex items-center gap-2">
                         {getResultIcon(student.resultado_final)}
                         <Badge
@@ -482,42 +483,50 @@ export default function StudentsList({ data, onMenuChange }: StudentsListProps) 
           </div>
 
           {/* Paginação */}
-          <div className="flex justify-between items-center mt-4">
-            <p className="text-sm text-muted-foreground">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mt-4">
+            <p className="text-xs md:text-sm text-muted-foreground">
               Mostrando {(currentPage - 1) * itemsPerPage + 1} a {Math.min(currentPage * itemsPerPage, filteredStudents.length)} de {filteredStudents.length} alunos
             </p>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-wrap">
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => setCurrentPage(1)}
                 disabled={currentPage === 1}
+                className="min-h-9 touch-target"
               >
-                Primeira
+                <span className="hidden sm:inline">Primeira</span>
+                <span className="sm:hidden">««</span>
               </Button>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
+                className="min-h-9 touch-target"
               >
-                Anterior
+                <span className="hidden sm:inline">Anterior</span>
+                <span className="sm:hidden">«</span>
               </Button>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
+                className="min-h-9 touch-target"
               >
-                Próxima
+                <span className="hidden sm:inline">Próxima</span>
+                <span className="sm:hidden">»</span>
               </Button>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => setCurrentPage(totalPages)}
                 disabled={currentPage === totalPages}
+                className="min-h-9 touch-target"
               >
-                Última
+                <span className="hidden sm:inline">Última</span>
+                <span className="sm:hidden">»»</span>
               </Button>
             </div>
           </div>

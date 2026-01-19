@@ -118,5 +118,203 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Prevent horizontal scrolling on mobile */
+    overflow-x: hidden;
+    /* Smooth scrolling for better UX */
+    scroll-behavior: smooth;
+  }
+}
+
+/* Mobile-first responsive base styles */
+@layer utilities {
+  /* Ensure no horizontal overflow */
+  .no-overflow-x {
+    overflow-x: hidden !important;
+  }
+
+  /* Touch-friendly tap targets (minimum 44x44px) */
+  .touch-target {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    @apply inline-flex items-center justify-center;
+  }
+
+  /* Safe area insets for notched devices */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-left {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  .safe-right {
+    padding-right: env(safe-area-inset-right);
+  }
+
+  /* Responsive text sizing */
+  .responsive-text {
+    @apply text-base;
+  }
+
+  @media (max-width: 640px) {
+    .responsive-text {
+      @apply text-sm;
+    }
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Optimize for touch devices */
+  @media (hover: none) and (pointer: coarse) {
+    /* Increase tap targets on touch devices */
+    button,
+    a,
+    [role="button"] {
+      min-height: 2.75rem;
+      min-width: 2.75rem;
+    }
+
+    /* Remove hover effects on touch */
+    .hover\:bg-muted\/50:hover {
+      background-color: transparent;
+    }
+  }
+
+  /* Prevent text selection on interactive elements */
+  .no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Responsive container */
+  .container-responsive {
+    @apply w-full px-4 mx-auto;
+  }
+
+  @media (min-width: 640px) {
+    .container-responsive {
+      @apply px-6;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-responsive {
+      @apply px-8;
+    }
+  }
+}
+
+/* Typography improvements for mobile */
+@layer base {
+  html {
+    /* Base font size for responsive scaling */
+    font-size: 16px;
+  }
+
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    html {
+      font-size: 13px;
+    }
+  }
+
+  /* Improve readability */
+  p, li, td, th {
+    max-width: 70ch;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 640px) {
+    p, li, td, th {
+      line-height: 1.5;
+    }
+  }
+
+  /* Better touch feedback */
+  button,
+  a,
+  [role="button"] {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    @apply transition-colors duration-150;
+  }
+
+  /* Focus styles for keyboard navigation */
+  button:focus-visible,
+  a:focus-visible,
+  [role="button"]:focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+}
+
+/* Responsive tables */
+@layer utilities {
+  .table-responsive {
+    @apply overflow-x-auto -mx-4 px-4;
+  }
+
+  @media (min-width: 768px) {
+    .table-responsive {
+      @apply mx-0 px-0;
+    }
+  }
+
+  /* Card grid responsive */
+  .grid-responsive {
+    @apply grid grid-cols-1 gap-4;
+  }
+
+  @media (min-width: 640px) {
+    .grid-responsive {
+      @apply grid-cols-2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid-responsive {
+      @apply grid-cols-4;
+    }
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  /* Reduce padding on mobile */
+  .mobile-padded {
+    @apply p-3;
+  }
+
+  /* Stack flex items on mobile */
+  .mobile-stack {
+    @apply flex-col;
+  }
+
+  /* Full width on mobile */
+  .mobile-full {
+    @apply w-full;
+  }
+
+  /* Hide less important elements on mobile */
+  .mobile-hide {
+    @apply hidden;
   }
 }

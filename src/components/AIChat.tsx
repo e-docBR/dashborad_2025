@@ -51,33 +51,34 @@ export default function AIChat() {
     }
 
     return (
-        <div className="fixed bottom-6 right-6 z-50">
+        <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
             {!isOpen && (
                 <Button
                     onClick={() => setIsOpen(true)}
-                    className="h-14 w-14 rounded-full shadow-lg bg-indigo-600 hover:bg-indigo-700 text-white"
+                    className="h-14 w-14 rounded-full shadow-lg bg-indigo-600 hover:bg-indigo-700 text-white min-h-14 min-w-14 touch-target"
                 >
-                    <MessageCircle className="h-8 w-8" />
+                    <MessageCircle className="h-7 w-7 md:h-8 md:w-8" />
                 </Button>
             )}
 
             {isOpen && (
-                <Card className="w-[350px] shadow-2xl border-indigo-200 animate-in slide-in-from-bottom-5 fade-in duration-300">
-                    <CardHeader className="flex flex-row items-center justify-between pb-3 bg-indigo-600 text-white rounded-t-lg">
-                        <CardTitle className="text-lg flex items-center gap-2">
-                            <Bot className="h-5 w-5" />
-                            Assistente IA
+                <Card className="w-[calc(100vw-2rem)] md:w-[350px] shadow-2xl border-indigo-200 animate-in slide-in-from-bottom-5 fade-in duration-300 max-h-[80vh] flex flex-col">
+                    <CardHeader className="flex flex-row items-center justify-between pb-3 bg-indigo-600 text-white rounded-t-lg shrink-0">
+                        <CardTitle className="text-base md:text-lg flex items-center gap-2">
+                            <Bot className="h-4 w-4 md:h-5 md:w-5" />
+                            <span className="hidden sm:inline">Assistente IA</span>
+                            <span className="sm:hidden">IA</span>
                         </CardTitle>
-                        <Button variant="ghost" size="icon" className="text-white hover:bg-indigo-700 h-8 w-8" onClick={() => setIsOpen(false)}>
+                        <Button variant="ghost" size="icon" className="text-white hover:bg-indigo-700 h-8 w-8 min-h-8 min-w-8 touch-target" onClick={() => setIsOpen(false)}>
                             <X className="h-5 w-5" />
                         </Button>
                     </CardHeader>
-                    <CardContent className="p-0">
-                        <div className="h-[400px] p-4 overflow-y-auto" ref={scrollRef}>
-                            <div className="space-y-4">
+                    <CardContent className="p-0 flex-1 overflow-hidden">
+                        <div className="h-[300px] md:h-[400px] p-3 md:p-4 overflow-y-auto" ref={scrollRef}>
+                            <div className="space-y-3 md:space-y-4">
                                 {messages.map((m) => (
                                     <div key={m.id} className={cn(
-                                        "flex w-max max-w-[80%] flex-col gap-2 rounded-lg px-3 py-2 text-sm",
+                                        "flex w-max max-w-[85%] md:max-w-[80%] flex-col gap-2 rounded-lg px-3 py-2 text-sm",
                                         m.role === 'user'
                                             ? "ml-auto bg-indigo-600 text-white"
                                             : "bg-muted text-foreground"
@@ -86,14 +87,14 @@ export default function AIChat() {
                                     </div>
                                 ))}
                                 {isLoading && (
-                                    <div className="flex w-max max-w-[80%] flex-col gap-2 rounded-lg px-3 py-2 text-sm bg-muted text-muted-foreground">
+                                    <div className="flex w-max max-w-[85%] md:max-w-[80%] flex-col gap-2 rounded-lg px-3 py-2 text-sm bg-muted text-muted-foreground">
                                         Digitando...
                                     </div>
                                 )}
                             </div>
                         </div>
                     </CardContent>
-                    <CardFooter className="p-3 bg-muted/20">
+                    <CardFooter className="p-2 md:p-3 bg-muted/20 shrink-0">
                         <form
                             onSubmit={(e) => { e.preventDefault(); handleSend(); }}
                             className="flex w-full items-center space-x-2"
@@ -102,9 +103,9 @@ export default function AIChat() {
                                 value={input}
                                 onChange={e => setInput(e.target.value)}
                                 placeholder="Pergunte sobre os alunos..."
-                                className="flex-1 focus-visible:ring-indigo-500"
+                                className="flex-1 focus-visible:ring-indigo-500 text-sm"
                             />
-                            <Button type="submit" size="icon" disabled={isLoading} className="bg-indigo-600 hover:bg-indigo-700">
+                            <Button type="submit" size="icon" disabled={isLoading} className="bg-indigo-600 hover:bg-indigo-700 min-h-10 min-w-10 touch-target">
                                 <Send className="h-4 w-4" />
                             </Button>
                         </form>

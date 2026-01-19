@@ -33,19 +33,26 @@ export async function chatWithData(message: string) {
         const worst_subjects = subjects.slice(-3).reverse().map(([k, v]) => `${k} (${v})`);
 
         // Lightweight context object to avoid huge payload if using real token-based AI
+        // Lightweight context object to avoid huge payload if using real token-based AI
+        // BUT for our MockAIProvider upgrade, we need the full data to perform dynamic analysis.
         const context = {
             total_students: data.resumo_geral.total_alunos,
             approval_rate: data.resumo_geral.taxa_aprovacao_global,
-            total_classes: Object.keys(data.estatisticas_por_turma).length,
-            best_class: Object.entries(data.estatisticas_por_turma)
-                .sort(([, a], [, b]) => b.taxa_aprovacao - a.taxa_aprovacao)[0]?.[1],
-            worst_class: Object.entries(data.estatisticas_por_turma)
-                .sort(([, a], [, b]) => a.taxa_aprovacao - b.taxa_aprovacao)[0]?.[1],
-            subjects_avg: data.resumo_geral.medias_gerais_disciplina,
-            top_students,
-            bottom_students,
-            best_subjects,
-            worst_subjects
+            // Full data injection for Mock Provider logic - Sanitized to reduce size
+            estatisticas_por_turma: data.estatisticas_por_turma, // This is already summary data
+            alunos: data.alunos.map(a => ({
+                nome: a.nome,
+                turma: a.turma,
+                turno: a.turno,
+                media_geral: a.media_geral,
+                resultado_final: a.resultado_final,
+                notas: a.notas // Keep grades for specific analysis
+            })),
+            resumo_geral: {
+                total_alunos: data.resumo_geral.total_alunos,
+                taxa_aprovacao_global: data.resumo_geral.taxa_aprovacao_global,
+                medias_gerais_disciplina: data.resumo_geral.medias_gerais_disciplina
+            }
         };
 
         const response = await AIService.chatWithData(message, context);

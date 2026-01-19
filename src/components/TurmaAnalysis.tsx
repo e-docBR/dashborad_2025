@@ -126,17 +126,18 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
     }))
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 md:space-y-6 no-overflow-x">
 
       {/* AI Insights Card */}
       <Card className="border-indigo-100 bg-indigo-50/50 dark:bg-indigo-950/20">
-        <CardHeader className="flex flex-row items-center justify-between pb-2">
+        <CardHeader className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-2 gap-3">
           <div className="space-y-1">
-            <CardTitle className="text-indigo-900 dark:text-indigo-100 flex items-center gap-2">
-              <Sparkles className="h-5 w-5 text-indigo-500" />
-              Insights Pedagógicos (IA)
+            <CardTitle className="text-sm md:text-base text-indigo-900 dark:text-indigo-100 flex items-center gap-2">
+              <Sparkles className="h-4 w-4 md:h-5 md:w-5 text-indigo-500" />
+              <span className="hidden sm:inline">Insights Pedagógicos (IA)</span>
+              <span className="sm:hidden">Insights IA</span>
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="text-xs md:text-sm">
               Análise automatizada de desempenho e sugestões pedagógicas.
             </CardDescription>
           </div>
@@ -144,25 +145,27 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
             onClick={handleGenerateInsights}
             disabled={loadingInsights || selectedTurma === 'all'}
             variant="outline"
-            className="bg-white hover:bg-indigo-50 text-indigo-700 border-indigo-200"
+            className="bg-white hover:bg-indigo-50 text-indigo-700 border-indigo-200 min-h-10 touch-target"
           >
             {loadingInsights ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Analisando...
+                <span className="hidden sm:inline">Analisando...</span>
+                <span className="sm:hidden">...</span>
               </>
             ) : (
               <>
                 <Sparkles className="mr-2 h-4 w-4" />
-                Gerar Análise
+                <span className="hidden sm:inline">Gerar Análise</span>
+                <span className="sm:hidden">Gerar</span>
               </>
             )}
           </Button>
         </CardHeader>
         {insights && (
           <CardContent>
-            <div className="prose prose-sm max-w-none text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 p-4 rounded-lg border border-indigo-100/50 shadow-sm">
-              <pre className="whitespace-pre-wrap font-sans">{insights}</pre>
+            <div className="prose prose-sm max-w-none text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-900 p-3 md:p-4 rounded-lg border border-indigo-100/50 shadow-sm">
+              <pre className="whitespace-pre-wrap font-sans text-xs md:text-sm">{insights}</pre>
             </div>
           </CardContent>
         )}
@@ -171,15 +174,15 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
       {/* Filtros */}
       <Card>
         <CardHeader>
-          <CardTitle>Filtros de Análise</CardTitle>
-          <CardDescription>Selecione os critérios para análise</CardDescription>
+          <CardTitle className="text-base md:text-lg">Filtros de Análise</CardTitle>
+          <CardDescription className="text-xs md:text-sm">Selecione os critérios para análise</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="flex gap-4 flex-wrap">
-            <div className="flex-1 min-w-[200px]">
-              <label className="text-sm font-medium mb-2 block">Turno</label>
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
+            <div className="flex-1 min-w-[150px] sm:min-w-[200px]">
+              <label className="text-xs md:text-sm font-medium mb-1 md:mb-2 block">Turno</label>
               <Select value={selectedTurno} onValueChange={setSelectedTurno}>
-                <SelectTrigger>
+                <SelectTrigger className="min-h-10">
                   <SelectValue placeholder="Todos os Turnos" />
                 </SelectTrigger>
                 <SelectContent>
@@ -189,10 +192,10 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
                 </SelectContent>
               </Select>
             </div>
-            <div className="flex-1 min-w-[200px]">
-              <label className="text-sm font-medium mb-2 block">Turma</label>
+            <div className="flex-1 min-w-[150px] sm:min-w-[200px]">
+              <label className="text-xs md:text-sm font-medium mb-1 md:mb-2 block">Turma</label>
               <Select value={selectedTurma} onValueChange={setSelectedTurma}>
-                <SelectTrigger>
+                <SelectTrigger className="min-h-10">
                   <SelectValue placeholder="Todas as Turmas" />
                 </SelectTrigger>
                 <SelectContent>
@@ -212,7 +215,7 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
       </Card>
 
       {/* Cards de Resumo */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
         {filteredStats.map(([_, stat]) => (
           <Card
             key={stat.turma}
@@ -220,29 +223,29 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
               }`}
             onClick={() => setSelectedTurma(stat.turma)}
           >
-            <CardHeader className="pb-3">
+            <CardHeader className="pb-2 md:pb-3">
               <div className="flex justify-between items-start">
-                <CardTitle className="text-lg">{stat.turma}</CardTitle>
+                <CardTitle className="text-base md:text-lg">{stat.turma}</CardTitle>
                 <Badge variant={stat.turno === 'MATUTINO' ? 'default' : 'secondary'}>
                   {stat.turno}
                 </Badge>
               </div>
             </CardHeader>
             <CardContent>
-              <div className="space-y-2">
-                <div className="flex justify-between text-sm">
+              <div className="space-y-1 md:space-y-2">
+                <div className="flex justify-between text-xs md:text-sm">
                   <span className="text-muted-foreground">Total:</span>
                   <span className="font-medium">{stat.total_alunos}</span>
                 </div>
-                <div className="flex justify-between text-sm">
+                <div className="flex justify-between text-xs md:text-sm">
                   <span className="text-muted-foreground">Aprovados:</span>
                   <span className="font-medium text-green-600">{stat.aprovados}</span>
                 </div>
-                <div className="flex justify-between text-sm">
+                <div className="flex justify-between text-xs md:text-sm">
                   <span className="text-muted-foreground">Reprovados:</span>
                   <span className="font-medium text-red-600">{stat.reprovados}</span>
                 </div>
-                <div className="flex justify-between text-sm">
+                <div className="flex justify-between text-xs md:text-sm">
                   <span className="text-muted-foreground">Taxa Aprovação:</span>
                   <span className={`font-medium ${stat.taxa_aprovacao >= 60 ? 'text-green-600' : 'text-yellow-600'}`}>
                     {stat.taxa_aprovacao}%
@@ -255,18 +258,18 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
       </div>
 
       {/* Gráficos Comparativos */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
         <Card>
           <CardHeader>
-            <CardTitle>Comparativo de Resultados</CardTitle>
-            <CardDescription>Distribuição por status</CardDescription>
+            <CardTitle className="text-base md:text-lg">Comparativo de Resultados</CardTitle>
+            <CardDescription className="text-xs md:text-sm">Distribuição por status</CardDescription>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={350}>
+            <ResponsiveContainer width="100%" height={280}>
               <BarChart data={turmasData}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="turma" />
-                <YAxis />
+                <XAxis dataKey="turma" tick={{ fontSize: 10 }} />
+                <YAxis tick={{ fontSize: 10 }} />
                 <Tooltip />
                 <Legend />
                 <Bar dataKey="aprovados" name="Aprovados" fill="#22c55e" />
@@ -279,15 +282,15 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
 
         <Card>
           <CardHeader>
-            <CardTitle>Outros Status</CardTitle>
-            <CardDescription>Transferidos, Desistentes e Cancelados</CardDescription>
+            <CardTitle className="text-base md:text-lg">Outros Status</CardTitle>
+            <CardDescription className="text-xs md:text-sm">Transferidos, Desistentes e Cancelados</CardDescription>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={350}>
+            <ResponsiveContainer width="100%" height={280}>
               <BarChart data={turmasData}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="turma" />
-                <YAxis />
+                <XAxis dataKey="turma" tick={{ fontSize: 10 }} />
+                <YAxis tick={{ fontSize: 10 }} />
                 <Tooltip />
                 <Legend />
                 <Bar dataKey="transferidos" name="Transferidos" fill="#3b82f6" />
@@ -301,15 +304,15 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
 
       <Card>
         <CardHeader>
-          <CardTitle>Taxa de Aprovação por Turma</CardTitle>
-          <CardDescription>Comparativo percentual</CardDescription>
+          <CardTitle className="text-base md:text-lg">Taxa de Aprovação por Turma</CardTitle>
+          <CardDescription className="text-xs md:text-sm">Comparativo percentual</CardDescription>
         </CardHeader>
         <CardContent>
-          <ResponsiveContainer width="100%" height={300}>
+          <ResponsiveContainer width="100%" height={250}>
             <BarChart data={turmasData}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="turma" />
-              <YAxis domain={[0, 100]} />
+              <XAxis dataKey="turma" tick={{ fontSize: 10 }} />
+              <YAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
               <Tooltip />
               <Bar
                 dataKey="taxa_aprovacao"
@@ -324,18 +327,18 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
 
       {/* Detalhes da Turma Selecionada */}
       {selectedClassData && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
           <Card>
             <CardHeader>
-              <CardTitle>Desempenho por Disciplina</CardTitle>
-              <CardDescription>{selectedClassData.turma}</CardDescription>
+              <CardTitle className="text-base md:text-lg">Desempenho por Disciplina</CardTitle>
+              <CardDescription className="text-xs md:text-sm">{selectedClassData.turma}</CardDescription>
             </CardHeader>
             <CardContent>
-              <ResponsiveContainer width="100%" height={350}>
+              <ResponsiveContainer width="100%" height={280}>
                 <RadarChart data={radarData}>
                   <PolarGrid />
-                  <PolarAngleAxis dataKey="subject" />
-                  <PolarRadiusAxis domain={[0, 100]} />
+                  <PolarAngleAxis dataKey="subject" tick={{ fontSize: 10 }} />
+                  <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 10 }} />
                   <Radar
                     name="Média"
                     dataKey="media"
@@ -351,69 +354,69 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
 
           <Card>
             <CardHeader>
-              <CardTitle>Distribuição por Gênero</CardTitle>
-              <CardDescription>{selectedClassData.turma}</CardDescription>
+              <CardTitle className="text-base md:text-lg">Distribuição por Gênero</CardTitle>
+              <CardDescription className="text-xs md:text-sm">{selectedClassData.turma}</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="space-y-4">
-                <div className="p-4 rounded-lg border">
+              <div className="space-y-3 md:space-y-4">
+                <div className="p-3 md:p-4 rounded-lg border">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="font-medium">Masculino</span>
-                    <Badge variant="outline">{selectedClassData.masculino} alunos</Badge>
+                    <span className="font-medium text-sm md:text-base">Masculino</span>
+                    <Badge variant="outline" className="text-xs md:text-sm">{selectedClassData.masculino} alunos</Badge>
                   </div>
-                  <div className="w-full bg-secondary rounded-full h-3">
+                  <div className="w-full bg-secondary rounded-full h-2 md:h-3">
                     <div
-                      className="bg-blue-500 h-3 rounded-full transition-all"
+                      className="bg-blue-500 h-2 md:h-3 rounded-full transition-all"
                       style={{
                         width: `${(selectedClassData.masculino / selectedClassData.total_alunos) * 100}%`
                       }}
                     />
                   </div>
-                  <p className="text-sm text-muted-foreground mt-1">
+                  <p className="text-xs md:text-sm text-muted-foreground mt-1">
                     {((selectedClassData.masculino / selectedClassData.total_alunos) * 100).toFixed(1)}%
                   </p>
                 </div>
 
-                <div className="p-4 rounded-lg border">
+                <div className="p-3 md:p-4 rounded-lg border">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="font-medium">Feminino</span>
-                    <Badge variant="outline">{selectedClassData.feminino} alunos</Badge>
+                    <span className="font-medium text-sm md:text-base">Feminino</span>
+                    <Badge variant="outline" className="text-xs md:text-sm">{selectedClassData.feminino} alunos</Badge>
                   </div>
-                  <div className="w-full bg-secondary rounded-full h-3">
+                  <div className="w-full bg-secondary rounded-full h-2 md:h-3">
                     <div
-                      className="bg-pink-500 h-3 rounded-full transition-all"
+                      className="bg-pink-500 h-2 md:h-3 rounded-full transition-all"
                       style={{
                         width: `${(selectedClassData.feminino / selectedClassData.total_alunos) * 100}%`
                       }}
                     />
                   </div>
-                  <p className="text-sm text-muted-foreground mt-1">
+                  <p className="text-xs md:text-sm text-muted-foreground mt-1">
                     {((selectedClassData.feminino / selectedClassData.total_alunos) * 100).toFixed(1)}%
                   </p>
                 </div>
 
-                <div className="pt-4 border-t">
+                <div className="pt-3 md:pt-4 border-t">
                   <Table>
                     <TableBody>
                       <TableRow>
-                        <TableCell className="font-medium">Total de Alunos</TableCell>
-                        <TableCell className="text-right">{selectedClassData.total_alunos}</TableCell>
+                        <TableCell className="font-medium text-xs md:text-sm">Total de Alunos</TableCell>
+                        <TableCell className="text-right text-xs md:text-sm">{selectedClassData.total_alunos}</TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell className="font-medium text-green-600">Aprovados</TableCell>
-                        <TableCell className="text-right">{selectedClassData.aprovados}</TableCell>
+                        <TableCell className="font-medium text-green-600 text-xs md:text-sm">Aprovados</TableCell>
+                        <TableCell className="text-right text-xs md:text-sm">{selectedClassData.aprovados}</TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell className="font-medium text-red-600">Reprovados</TableCell>
-                        <TableCell className="text-right">{selectedClassData.reprovados}</TableCell>
+                        <TableCell className="font-medium text-red-600 text-xs md:text-sm">Reprovados</TableCell>
+                        <TableCell className="text-right text-xs md:text-sm">{selectedClassData.reprovados}</TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell className="font-medium text-yellow-600">APCC</TableCell>
-                        <TableCell className="text-right">{selectedClassData.apcc}</TableCell>
+                        <TableCell className="font-medium text-yellow-600 text-xs md:text-sm">APCC</TableCell>
+                        <TableCell className="text-right text-xs md:text-sm">{selectedClassData.apcc}</TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell className="font-medium">Taxa de Aprovação</TableCell>
-                        <TableCell className="text-right font-bold">{selectedClassData.taxa_aprovacao}%</TableCell>
+                        <TableCell className="font-medium text-xs md:text-sm">Taxa de Aprovação</TableCell>
+                        <TableCell className="text-right font-bold text-xs md:text-sm">{selectedClassData.taxa_aprovacao}%</TableCell>
                       </TableRow>
                     </TableBody>
                   </Table>
@@ -427,34 +430,34 @@ export default function TurmaAnalysis({ data, onMenuChange }: TurmaAnalysisProps
       {/* Tabela Detalhada de Médias por Turma */}
       <Card>
         <CardHeader>
-          <CardTitle>Médias por Disciplina - Todas as Turmas</CardTitle>
-          <CardDescription>Comparativo detalhado</CardDescription>
+          <CardTitle className="text-base md:text-lg">Médias por Disciplina - Todas as Turmas</CardTitle>
+          <CardDescription className="text-xs md:text-sm">Comparativo detalhado</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="max-h-[500px] overflow-y-auto">
+          <div className="max-h-[400px] overflow-auto table-responsive">
             <Table>
               <TableHeader className="sticky top-0 bg-background">
                 <TableRow>
-                  <TableHead>Turma</TableHead>
-                  <TableHead>Turno</TableHead>
-                  <TableHead>Total</TableHead>
+                  <TableHead className="whitespace-nowrap text-xs md:text-sm">Turma</TableHead>
+                  <TableHead className="whitespace-nowrap text-xs md:text-sm">Turno</TableHead>
+                  <TableHead className="whitespace-nowrap text-xs md:text-sm">Total</TableHead>
                   {Object.keys(data.resumo_geral.medias_gerais_disciplina).map((disc) => (
-                    <TableHead key={disc} className="text-right">{disc}</TableHead>
+                    <TableHead key={disc} className="text-right whitespace-nowrap text-xs md:text-sm">{disc}</TableHead>
                   ))}
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {filteredStats.map(([_, stat]) => (
                   <TableRow key={stat.turma}>
-                    <TableCell className="font-medium">{stat.turma}</TableCell>
-                    <TableCell>
+                    <TableCell className="font-medium whitespace-nowrap text-xs md:text-sm">{stat.turma}</TableCell>
+                    <TableCell className="whitespace-nowrap text-xs md:text-sm">
                       <Badge variant={stat.turno === 'MATUTINO' ? 'default' : 'secondary'}>
                         {stat.turno}
                       </Badge>
                     </TableCell>
-                    <TableCell>{stat.total_alunos}</TableCell>
+                    <TableCell className="whitespace-nowrap text-xs md:text-sm">{stat.total_alunos}</TableCell>
                     {Object.keys(data.resumo_geral.medias_gerais_disciplina).map((disc) => (
-                      <TableCell key={disc} className="text-right">
+                      <TableCell key={disc} className="text-right whitespace-nowrap text-xs md:text-sm">
                         <span className={
                           stat.medias_disciplina[disc] >= 60 ? 'text-green-600' :
                             stat.medias_disciplina[disc] >= 50 ? 'text-yellow-600' :
