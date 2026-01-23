@@ -2,20 +2,20 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Users, 
-  TrendingUp, 
-  TrendingDown, 
+import {
+  Users,
+  TrendingUp,
+  TrendingDown,
   GraduationCap,
   Calendar
 } from 'lucide-react'
-import { 
-  BarChart, 
-  Bar, 
-  XAxis, 
-  YAxis, 
-  CartesianGrid, 
-  Tooltip, 
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
   ResponsiveContainer,
   PieChart,
   Pie,
@@ -87,6 +87,13 @@ export default function Overview({ data, onMenuChange }: OverviewProps) {
     reprovados: stat.reprovados,
     taxa_aprovacao: stat.taxa_aprovacao
   }))
+
+  // Extract unique grade levels from class names
+  const gradeLevels = [...new Set(
+    Object.values(data.estatisticas_por_turma)
+      .map(s => s.turma.match(/(\d+º ANO)/)?.[1])
+      .filter(Boolean)
+  )].sort().join(', ') || 'Diversos'
 
   return (
     <div className="space-y-4 md:space-y-6 no-overflow-x">
@@ -217,8 +224,8 @@ export default function Overview({ data, onMenuChange }: OverviewProps) {
             <ResponsiveContainer width="100%" height={250}>
               <BarChart data={subjectsData}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis 
-                  dataKey="disciplina" 
+                <XAxis
+                  dataKey="disciplina"
                   tick={{ fontSize: 10 }}
                   angle={-45}
                   textAnchor="end"
@@ -268,8 +275,8 @@ export default function Overview({ data, onMenuChange }: OverviewProps) {
               <p className="text-xl md:text-2xl font-bold">2025</p>
             </div>
             <div className="p-3 md:p-4 rounded-lg border">
-              <p className="text-xs md:text-sm text-muted-foreground">Série</p>
-              <p className="text-base md:text-2xl font-bold">6º Ano</p>
+              <p className="text-xs md:text-sm text-muted-foreground">Séries</p>
+              <p className="text-base md:text-lg font-bold leading-tight">{gradeLevels}</p>
             </div>
             <div className="p-3 md:p-4 rounded-lg border">
               <p className="text-xs md:text-sm text-muted-foreground">Escola</p>

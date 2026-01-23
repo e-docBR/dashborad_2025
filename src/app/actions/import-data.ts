@@ -34,34 +34,31 @@ export async function importSchoolData(formData: FormData) {
 
         for (const data of parsedData) {
             // Find or create Class
-            // Assumption: Year is 2025
-            const turma = await db.class.upsert({
+            let turma = await db.class.findFirst({
                 where: {
-                    // We don't have a unique constraint on name+year in schema yet,
-                    // but usually id is cuid. We should verify if we can find by name.
-                    // Since schema has "model Class { id ... name ... year ... }",
-                    // we'll try to findFirst. Upsert requires a unique where clause.
-                    // I will change logic to findFirst then create/update.
-                    id: 'placeholder'
-                },
-                create: {
                     name: data.className,
                     year: 2025
-                },
-                update: {}
-            }).catch(async () => {
-                // Fallback for non-unique find
-                const existing = await db.class.findFirst({
-                    where: { name: data.className, year: 2025 }
-                })
-                if (existing) return existing;
-                return await db.class.create({
-                    data: { name: data.className, year: 2025 }
-                })
-            })
+                }
+            });
+
+            if (!turma) {
+                turma = await db.class.create({
+                    data: {
+                        name: data.className,
+                        year: 2025,
+                        shift: data.shift
+                    }
+                });
+                stats.classes++;
+            } else if (turma.shift !== data.shift) {
+                // Update shift if it changed
+                turma = await db.class.update({
+                    where: { id: turma.id },
+                    data: { shift: data.shift }
+                });
+            }
 
             if (!turma) continue;
-            stats.classes++;
 
             for (const student of data.students) {
                 // Find or create Student

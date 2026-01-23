@@ -65,6 +65,7 @@ model Class {
   id        String    @id @default(cuid())
   name      String    // e.g., "9º Ano A", "3ª Série EM"
   year      Int       // e.g., 2025
+  shift     String?   // "MATUTINO", "VESPERTINO", "NOTURNO"
   students  Student[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt

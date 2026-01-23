@@ -39,24 +39,8 @@ export async function getDashboardData() {
         let classMasculino = 0;
         let classFeminino = 0;
 
-        // Class shift is not directly in DB "Class" model properly (I parsed it but didn't store it in Class model, only Class Name)
-        // Heuristic: Check if name/shift string or just count. 
-        // The parser script stored "6º ANO A" as name. 
-        // The parser returns Shift separately. 
-        // Ideally we should have stored Shift in Class model.
-        // For now, let's guess based on typical names or if we missed storing it.
-        // Wait, the process-uploads script: 
-        // `console.log(Found Class Data: ${data.className} (${data.shift}))`
-        // but `prisma.class.create({ data: { name: data.className, year: 2025 } });`
-        // We lost the shift info in DB! 
-        // However, I can try to recover it from the student data or just default it.
-        // Or update schema again? 
-        // Let's assume 6th grade A-D is Matutino, E-G is Vespertino as seen in JSON?
-        // Or just look at the PDF data again?
-        // Let's rely on what we have. If missing, label "Indefinido".
-
-        const shift = (['A', 'B', 'C', 'D'].some(l => c.name.includes(l)) && !c.name.includes('E') && !c.name.includes('F') && !c.name.includes('G')) ? 'MATUTINO' : 'VESPERTINO';
-        // Rough heuristic matching the sample JSON 6th grade structure.
+        // Use actual shift from database instead of heuristic
+        const shift = c.shift || 'Indefinido';
 
         if (shift === 'MATUTINO') turmas_matutino++;
         else turmas_vespertino++;

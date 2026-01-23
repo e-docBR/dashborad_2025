@@ -1,5 +1,6 @@
 import { read, utils } from 'xlsx';
-import pdf from 'pdf-parse';
+import pdf from 'pdf-parse/lib/pdf-parse.js';
+import { normalizeSubjectName } from './subject-mapper';
 
 export interface ParsedStudent {
     name: string;
@@ -20,6 +21,10 @@ export async function parseSchoolPDF(buffer: Buffer): Promise<ParsedData[]> {
     const text = data.text;
     const lines = text.split('\n');
 
+    console.log('[PDF Parser] Total lines extracted:', lines.length);
+    console.log('[PDF Parser] First 10 lines:', lines.slice(0, 10));
+    console.log('[PDF Parser] Last 10 lines:', lines.slice(-10));
+
     let currentClass = "";
     let currentShift = "";
     const students: ParsedStudent[] = [];
@@ -30,98 +35,91 @@ export async function parseSchoolPDF(buffer: Buffer): Promise<ParsedData[]> {
     if (headerMatch) {
         currentClass = headerMatch[1];
         currentShift = headerMatch[2];
+        console.log('[PDF Parser] Header found - Class:', currentClass, 'Shift:', currentShift);
+    } else {
+        console.log('[PDF Parser] No header match found');
     }
 
-    // Map of potential subjects based on order in text (this is an assumption, ideally we parse the header)
-    // Based on JSON: Português, Arte, Filosofia, Inglês, Matemática, Ciências, Geografia, História, Religião
+    // Map of subjects based on actual PDF format
+    // From PDF: LÍNGUA PORTUGUÊSA, ARTE, EDUCAÇÃO FÍSICA, LÍNGUA INGLESA, MATEMÁTICA, CIÊNCIAS, GEOGRAFIA, HISTÓRIA, ENSINO RELIGIOSO
     const subjects = [
-        "Português", "Arte", "Filosofia", "Inglês",
+        "Português", "Arte", "Educação Física", "Inglês",
         "Matemática", "Ciências", "Geografia", "História", "Religião"
     ];
 
-    // Regexes
-    // 1. Date Start Line (Date + ...): Missing Name at start
-    const dateStartRegex = /^(\d{2}\/\d{2}\/\d{4})(?:[ ]?)([MF])(?:[ ]?)([\d,.-]+)(APROVADO|REPROVADO|APCC|TRANSFERIDO|DESISTENTE|CANCELADO)$/;
+    // Regex for student data line
+    // Format: NAME + DATE + SEX + GRADES + RESULT
+    // Example: ADASSA VITORIA SOARES MARTINS20/08/2013F53,783,072,070,564,463,072,064,474,0APROVADO
+    const studentLineRegex = /^(.+?)(\d{2}\/\d{2}\/\d{4})([MF])([\d,.]+)(APROVADO|REPROVADO|APCC|TRANSFERIDO|DESISTENTE|CANCELADO)$/;
 
-    // Buffer to hold potential name lines
-    let nameBuffer: string[] = [];
+    // Header keywords to ignore
 
-    // Header keywords to ignore when buffering names
+    // Header keywords to ignore
     const headerKeywords = [
         "Prefeitura", "CNPJ", "Secretaria", "ATA", "Turma", "DISCIPLINAS",
         "Nascimento", "Escola", "INEP", "AV.", "Assinatura", "Alunos", "SEXO",
         "RESULTADO", "MÉDIA", "Turno", "Data de", "Graus", "Municipal",
-        "ASÊUGUTROP", "AUGNÍL", "ETRA", "ACISÍF", "OÃÇACUDE", "ASELGNI",
-        "ACITÁMETAM", "SAICNÊIC", "AIFARGOEG", "AIRÓTSIH", "OSOIGILER", "ONISNE"
+        "LÍNGUA PORTUGUÊSA", "ARTE", "EDUCAÇÃO FÍSICA", "LÍNGUA INGLESA",
+        "MATEMÁTICA", "CIÊNCIAS", "GEOGRAFIA", "HISTÓRIA", "ENSINO RELIGIOSO"
     ];
+
+    // Regex for student data line suffix: Date + Sex + Grades + Result
+    // Note: Grades can be digits/commas/dots OR dashes (------------------) for Cancelled/Transferred
+    const dataRegex = /(\d{2}\/\d{2}\/\d{4})([MF])([\d,.-]+)(APROVADO|REPROVADO|APCC|TRANSFERIDO|DESISTENTE|CANCELADO)$/;
+
+    let nameBuffer: string[] = [];
 
     for (const line of lines) {
         const trimmed = line.trim();
         if (!trimmed) continue;
 
-        // Try matching Full Line first (Name + Date...)
-        // We look for the Date pattern presence
-        const dateIndex = trimmed.search(/\d{2}\/\d{2}\/\d{4}/);
-
-        let matchData: { name: string, birthDate: string, sex: string, rawGrades: string, result: string } | null = null;
-
-        if (dateIndex > 0) {
-            // Potential Full Line (Name before Date)
-            // Extract Name part
-            const namePart = trimmed.substring(0, dateIndex).trim();
-            const rest = trimmed.substring(dateIndex);
-
-            // Validate the rest matches Date... pattern
-            const restMatch = rest.match(dateStartRegex);
-            if (restMatch && namePart.length > 2) {
-                matchData = {
-                    name: namePart,
-                    birthDate: restMatch[1],
-                    sex: restMatch[2],
-                    rawGrades: restMatch[3],
-                    result: restMatch[4]
-                };
+        // Check if header
+        const isHeader = headerKeywords.some(k => trimmed.includes(k));
+        if (isHeader) {
+            // If we hit a header, clear any pending name buffer as it's likely invalid
+            if (nameBuffer.length > 0) {
+                console.log(`[PDF Parser] Warning: Clearing name buffer due to header: ${nameBuffer.join(' ')}`);
+                nameBuffer = [];
             }
-        } else if (dateIndex === 0) {
-            // Line starts with Date (Name is in Buffer)
-            const restMatch = trimmed.match(dateStartRegex);
-            if (restMatch) {
-                // Combine buffer for name
-                const bufferedName = nameBuffer.join(" ").trim();
-                // Heuristic: If buffer is empty, maybe previous line was skipped?
-                // But generally buffer should fill up.
-                if (bufferedName.length > 0) {
-                    matchData = {
-                        name: bufferedName,
-                        birthDate: restMatch[1],
-                        sex: restMatch[2],
-                        rawGrades: restMatch[3],
-                        result: restMatch[4]
-                    };
-                }
-            }
+            continue;
         }
 
-        if (matchData) {
-            // We found a student! Process Grades
-            let gradesVal: number[] = [];
-            const { rawGrades } = matchData;
+        // Try to match student data suffix
+        const match = trimmed.match(dataRegex);
+        if (match) {
+            const [, birthDate, sex, rawGrades, result] = match;
 
-            if (rawGrades.includes(' ')) {
-                gradesVal = rawGrades.split(/\s+/).map(g => {
-                    if (g === '--' || g === '-') return 0;
-                    return parseFloat(g.replace(',', '.'));
-                });
-            } else {
-                const gradeMatches = rawGrades.match(/(\d{1,3},\d|--|-)/g);
-                if (gradeMatches) {
-                    gradesVal = gradeMatches.map(g => {
-                        if (g === '--' || g === '-') return 0;
-                        return parseFloat(g.replace(',', '.'));
-                    });
+            // The start of the line might be the suffix of the name
+            const matchIndex = trimmed.indexOf(match[0]);
+            const nameSuffix = trimmed.substring(0, matchIndex).trim();
+
+            const fullName = [...nameBuffer, nameSuffix].filter(Boolean).join(" ");
+            nameBuffer = []; // Reset buffer
+
+            console.log('[PDF Parser] Student found:', fullName);
+            console.log('[PDF Parser] Raw grades:', rawGrades);
+
+            // Parse grades - they are comma-separated without spaces
+            // Format: 53,783,072,070,564,463,072,064,474,0
+            // Each grade is 4 digits: 2 digits + comma + 1 decimal
+            const gradesVal: number[] = [];
+            let i = 0;
+            while (i < rawGrades.length) {
+                // Look for pattern: digits + comma + digit
+                const gradeMatch = rawGrades.substring(i).match(/^(\d+,\d)/);
+                if (gradeMatch) {
+                    const gradeStr = gradeMatch[1];
+                    gradesVal.push(parseFloat(gradeStr.replace(',', '.')));
+                    i += gradeStr.length;
+                } else {
+                    // Skip separators or dashes
+                    i++;
                 }
             }
 
+            console.log('[PDF Parser] Parsed grades:', gradesVal);
+
+            // Map grades to subjects
             const studentGrades: Record<string, number> = {};
             subjects.forEach((subj, idx) => {
                 if (idx < gradesVal.length) {
@@ -130,25 +128,20 @@ export async function parseSchoolPDF(buffer: Buffer): Promise<ParsedData[]> {
             });
 
             students.push({
-                name: matchData.name,
-                birthDate: matchData.birthDate,
-                sex: matchData.sex,
+                name: fullName.trim(),
+                birthDate,
+                sex,
                 grades: studentGrades,
-                result: matchData.result
+                result
             });
-
-            // Clear buffer
-            nameBuffer = [];
         } else {
-            // Not a data line. Add to buffer if not junk.
-            const isHeader = headerKeywords.some(k => trimmed.includes(k));
-            if (!isHeader && trimmed.length > 2) {
-                nameBuffer.push(trimmed);
-                if (nameBuffer.length > 3) nameBuffer.shift();
-            }
+            // If no data match, assume it's part of the name
+            nameBuffer.push(trimmed);
         }
     }
 
+
+    console.log('[PDF Parser] Total students parsed:', students.length);
     return [{
         className: currentClass || "Desconhecida",
         shift: currentShift || "Desconhecido",
