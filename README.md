@@ -25,10 +25,12 @@
   - **Ajustes Curriculares**: Sugestões fundamentadas de modificações curriculares
 - **Assistente de Dados (Chatbot)**: Interface de chat em linguagem natural para consultar dados escolares (ex: "Quais alunos do 9º ano A precisam de reforço em Matemática?").
 
-### 🛠️ Gestão Escolar
-- Importação de dados via planilhas (Excel/CSV).
-- Cadastro e enturmação de alunos.
-- Gestão de resultados (notas e avaliações).
+### 🛠️ Gestão de Dados e Importação
+- **Sistema de Importação Aprimorado**: Suporte para importação de múltiplos PDFs simultaneamente com processamento em lote.
+- **Normalização Inteligente**: Mapeamento automático de nomes de disciplinas e correção de inconsistências.
+- **Importação via Planilhas**: Suporte legado para Excel/CSV.
+- **Cadastro**: Enturmação automática baseada nos dados importados.
+- **Relatório de Correções**: Geração automática de relatórios de inconsistências resolvidas.
 
 ---
 
@@ -44,6 +46,19 @@ O projeto foi construído utilizando uma stack moderna e robusta para garantir p
 - **Gerenciamento de Estado**: [Zustand](https://github.com/pmndrs/zustand) e [TanStack Query](https://tanstack.com/query)
 - **Banco de Dados & ORM**: [SQLite](https://www.sqlite.org/) (Dev) / [PostgreSQL](https://www.postgresql.org/) (Prod) e [Prisma](https://www.prisma.io/)
 - **IA**: Integração com LLMs via provedores de API (OpenAI/Google Gemini) - *Mock Provider implementado para testes*.
+
+---
+
+---
+
+## 📚 Documentação Completa
+
+Para navegar por toda a documentação do projeto, consulte o **[Índice de Documentação](INDICE-DOCUMENTACAO.md)**.
+
+Documentos essenciais:
+- **[COMO-RODAR-O-SISTEMA.md](COMO-RODAR-O-SISTEMA.md)**: Guia detalhado de instalação e execução.
+- **[PEDAGOGICAL_INSIGHTS_SYSTEM.md](PEDAGOGICAL_INSIGHTS_SYSTEM.md)**: Manual do sistema de insights pedagógicos.
+- **[IMPORT_DATA_FIX_REPORT.md](IMPORT_DATA_FIX_REPORT.md)**: Detalhes sobre o sistema de importação de dados.
 
 ---
 
@@ -86,6 +101,8 @@ O projeto foi construído utilizando uma stack moderna e robusta para garantir p
 
 6.  **Acesse a Aplicação**
     Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+> **Nota:** Para instruções detalhadas, configurações de produção, Docker e solução de problemas, consulte o guia [COMO-RODAR-O-SISTEMA.md](COMO-RODAR-O-SISTEMA.md).
 
 ---
 
